@@ -1,0 +1,215 @@
+name: pujjaa_portfolio
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.2.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/image/bg_image.jpg
+    - assets/image/bg_image1.png
+    - assets/docs/Pujjaa VBA_Software Developer_Resume (Online).pdf
+    
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Thin.ttf
+        - asset: assets/fonts/Poppins-ThinItalic.ttf
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+        - asset: assets/fonts/Poppins-ExtraLightItalic.ttf
+        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-LightItalic.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+        - asset: assets/fonts/Poppins-Black.ttf
+        - asset: assets/fonts/Poppins-BlackItalic.ttf
+
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf
+        - asset: assets/fonts/Roboto-VariableFont_wdth,wght.ttf
+
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/Rubik80sFade-Regular.ttf
+        - asset: assets/fonts/RubikDistressed-Regular.ttf
+        - asset: assets/fonts/RubikGlitch-Regular.ttf
+        - asset: assets/fonts/RubikIso-Regular.ttf
+        - asset: assets/fonts/RubikMaps-Regular.ttf
+        - asset: assets/fonts/RubikMarkerHatch-Regular.ttf
+        - asset: assets/fonts/RubikMicrobe-Regular.ttf
+        - asset: assets/fonts/RubikMoonrocks-Regular.ttf
+        - asset: assets/fonts/RubikPuddles-Regular.ttf
+
+    - family: Sacramento
+      fonts:
+        - asset: assets/fonts/Sacramento-Regular.ttf
+
+    - family: SpecialElite
+      fonts:
+        - asset: assets/fonts/SpecialElite-Regular.ttf
+
+    - family: Tangerine
+      fonts:
+        - asset: assets/fonts/Tangerine-Regular.ttf
+        - asset: assets/fonts/Tangerine-Bold.ttf
+
+    - family: AlmendraDisplay
+      fonts:
+        - asset: assets/fonts/AlmendraDisplay-Regular.ttf
+
+    - family: AlumniSansInlineOne
+      fonts:
+        - asset: assets/fonts/AlumniSansInlineOne-Regular.ttf
+        - asset: assets/fonts/AlumniSansInlineOne-Italic.ttf
+
+    - family: Barriecito
+      fonts:
+        - asset: assets/fonts/Barriecito-Regular.ttf
+
+    - family: Barrio
+      fonts:
+        - asset: assets/fonts/Barrio-Regular.ttf
+
+    - family: Birthstone
+      fonts:
+        - asset: assets/fonts/Birthstone-Regular.ttf
+
+    - family: BitcountGridDouble
+      fonts:
+        - asset: assets/fonts/BitcountGridDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf
+
+    - family: BonheurRoyale
+      fonts:
+        - asset: assets/fonts/BonheurRoyale-Regular.ttf
+
+    - family: BungeeTint
+      fonts:
+        - asset: assets/fonts/BungeeTint-Regular.ttf
+
+    - family: Carattere
+      fonts:
+        - asset: assets/fonts/Carattere-Regular.ttf
+
+    - family: Condiment
+      fonts:
+        - asset: assets/fonts/Condiment-Regular.ttf
+
+    - family: Corinthia
+      fonts:
+        - asset: assets/fonts/Corinthia-Regular.ttf
+        - asset: assets/fonts/Corinthia-Bold.ttf
+
+    - family: DancingScript
+      fonts:
+        - asset: assets/fonts/DancingScript-VariableFont_wght.ttf
+
+    - family: Explora
+      fonts:
+        - asset: assets/fonts/Explora-Regular.ttf
+
+    - family: Felipa
+      fonts:
+        - asset: assets/fonts/Felipa-Regular.ttf
+
+    - family: FontdinerSwanky
+      fonts:
+        - asset: assets/fonts/FontdinerSwanky-Regular.ttf
+
+    - family: HanaleiFill
+      fonts:
+        - asset: assets/fonts/HanaleiFill-Regular.ttf
+
+    - family: IrishGrover
+      fonts:
+        - asset: assets/fonts/IrishGrover-Regular.ttf
+
+    - family: IslandMoments
+      fonts:
+        - asset: assets/fonts/IslandMoments-Regular.ttf
+
+    - family: Italianno
+      fonts:
+        - asset: assets/fonts/Italianno-Regular.ttf
+
+    - family: JollyLodger
+      fonts:
+        - asset: assets/fonts/JollyLodger-Regular.ttf
+
+    - family: JotiOne
+      fonts:
+        - asset: assets/fonts/JotiOne-Regular.ttf
+
+    - family: KalniaGlaze
+      fonts:
+        - asset: assets/fonts/KalniaGlaze-VariableFont_wdth,wght.ttf
+
+    - family: Knewave
+      fonts:
+        - asset: assets/fonts/Knewave-Regular.ttf
+
+    - family: LavishlyYours
+      fonts:
+        - asset: assets/fonts/LavishlyYours-Regular.ttf
+
+    - family: LibertinusMono
+      fonts:
+        - asset: assets/fonts/LibertinusMono-Regular.ttf
+
+    - family: MeaCulpa
+      fonts:
+        - asset: assets/fonts/MeaCulpa-Regular.ttf
+
+    - family: MeowScript
+      fonts:
+        - asset: assets/fonts/MeowScript-Regular.ttf
+
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Italic-VariableFont_wght.ttf
+        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+
+    - family: MoonDance
+      fonts:
+        - asset: assets/fonts/MoonDance-Regular.ttf
+
+    - family: Nabla
+      fonts:
+        - asset: assets/fonts/Nabla-Regular-VariableFont_EDPT,EHLT.ttf
+
+    - family: Newsreader
+      fonts:
+        - asset: assets/fonts/Newsreader-VariableFont_opsz,wght.ttf
+        - asset: assets/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf
+
+    - family: Nosifer
+      fonts:
+        - asset: assets/fonts/Nosifer-Regular.ttf
+
+    - family: PoiretOne
+      fonts:
+        - asset: assets/fonts/PoiretOne-Regular.ttf
+
