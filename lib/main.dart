@@ -43,30 +43,30 @@ class _MainAppState extends State<MainApp> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Expanded(
-                              flex: 2,
-                              child: Center(
-                                child: Image.asset(
-                                  'assets/image/bg_image1.png',
-                                  height: 800,
-                                  width: 800,
-                                  fit: BoxFit.contain,
-                                ),
-                              ),
-                            ),
+                            // Expanded(
+                            //   flex: 2,
+                            //   child: Center(
+                            //     child: Image.asset(
+                            //       'assets/image/bg_image1.png',
+                            //       height: 800,
+                            //       width: 800,
+                            //       fit: BoxFit.contain,
+                            //     ),
+                            //   ),
+                            // ),
                             Expanded(
                               flex: 3,
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
                                     'HELLO!',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 42,
+                                      fontSize: 75,
                                       fontWeight: FontWeight.w800,
-                                      fontFamily: '<Montserrat>',
+                                      fontFamily: 'Barrio',
                                       letterSpacing: 2.0,
                                       shadows: [
                                         Shadow(
@@ -82,9 +82,9 @@ class _MainAppState extends State<MainApp> {
                                     'I\'m Pujjaa VBA',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 38,
+                                      fontSize: 70,
                                       fontWeight: FontWeight.w700,
-                                      fontFamily: '<Montserrat>',
+                                      fontFamily: 'Barriecito',
                                       letterSpacing: 1.5,
                                       shadows: [
                                         Shadow(
@@ -108,41 +108,93 @@ class _MainAppState extends State<MainApp> {
                       // ======= Technical Skills Section =======
                       buildTechnicalSkillsSection(context),
 
-                      const SizedBox(height: 32),
+                      // const SizedBox(height: 32),
+                      // // https://drive.google.com/file/d/1maVAmhduRDYz0vBvPtI2Oa4l8JMu9YuY/view?usp=drive_link
                       Container(
-                        padding: const EdgeInsets.all(24),
+                        alignment: Alignment.center,
+                        height: 60,
+                        width: double.infinity,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              const Color.fromARGB(255, 61, 89, 103),
-                              Colors.indigo.shade600,
+                              Colors.black,
+                              Colors.blueGrey,
+                              Colors.black,
                             ],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
                           ),
-                          borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black.withOpacity(0.3),
-                              blurRadius: 12,
-                              offset: const Offset(0, 6),
-                            ),
-                          ],
+                          borderRadius: BorderRadius.circular(15),
                         ),
-                        child: Column(
-                          children: const [
-                            Text(
-                              'Download Resume - PUJJAA VBA',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white,
+                        margin: EdgeInsets.only(
+                          left: 150,
+                          right: 150,
+                          bottom: 60,
+                        ),
+                        child: InkWell(
+                          onTap: () => _launchURL(
+                            context,
+                            'https://drive.google.com/file/d/1maVAmhduRDYz0vBvPtI2Oa4l8JMu9YuY/view?usp=drive_link',
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: const [
+                              Icon(Icons.link, color: Colors.white),
+                              SizedBox(width: 8),
+                              Text(
+                                'Download Resume',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  shadows: [
+                                    Shadow(
+                                      color: Colors.black,
+                                      blurRadius: 3,
+                                      offset: Offset(1.5, 1.5),
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
+                      const SizedBox(height: 20),
+                      // Container(
+                      //   padding: const EdgeInsets.all(24),
+                      //   decoration: BoxDecoration(
+                      //     gradient: LinearGradient(
+                      //       colors: [
+                      //         const Color.fromARGB(255, 61, 89, 103),
+                      //         Colors.indigo.shade600,
+                      //       ],
+                      //       begin: Alignment.topLeft,
+                      //       end: Alignment.bottomRight,
+                      //     ),
+                      //     borderRadius: BorderRadius.circular(20),
+                      //     boxShadow: [
+                      //       BoxShadow(
+                      //         color: Colors.black.withOpacity(0.3),
+                      //         blurRadius: 12,
+                      //         offset: const Offset(0, 6),
+                      //       ),
+                      //     ],
+                      //   ),
+                      //   child: Column(
+                      //     children: const [
+                      //       Text(
+                      //         'Download Resume - PUJJAA VBA',
+                      //         textAlign: TextAlign.center,
+                      //         style: TextStyle(
+                      //           fontSize: 18,
+                      //           fontWeight: FontWeight.w600,
+                      //           color: Colors.white,
+                      //         ),
+                      //       ),
+                      //     ],
+                      //   ),
+                      // ),
                     ],
                   ),
                 ),
@@ -165,11 +217,7 @@ class _MainAppState extends State<MainApp> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
-              Icon(
-                Icons.person_outline_rounded,
-                color: Colors.cyanAccent,
-                size: 32,
-              ),
+              Icon(Icons.person_outline_rounded, size: 32, color: Colors.white),
               SizedBox(width: 10),
               Text(
                 'About Me',
@@ -178,7 +226,7 @@ class _MainAppState extends State<MainApp> {
                   fontSize: 32,
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.2,
-                  fontFamily: '<Montserrat>',
+                  fontFamily: 'Barrio',
                   shadows: [
                     Shadow(
                       blurRadius: 6.0,
@@ -196,8 +244,15 @@ class _MainAppState extends State<MainApp> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  const Color.fromARGB(255, 61, 89, 103),
-                  Colors.indigo.shade600,
+                  Colors.black12,
+                  Colors.blueGrey,
+                  // Colors.blue.shade400,
+                  Colors.black,
+                  // Colors.black12,
+                  // const Color.fromARGB(255, 61, 89, 103),
+                  // Colors.indigo.shade600,
+                  // Colors.blue.shade400,
+                  // Colors.black,
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -220,6 +275,13 @@ class _MainAppState extends State<MainApp> {
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                     color: Colors.white,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black,
+                        blurRadius: 3,
+                        offset: Offset(1.5, 1.5),
+                      ),
+                    ],
                   ),
                 ),
                 SizedBox(height: 20),
@@ -230,6 +292,13 @@ class _MainAppState extends State<MainApp> {
                     color: Colors.white,
                     fontSize: 16,
                     height: 1.6,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black,
+                        blurRadius: 3,
+                        offset: Offset(1.5, 1.5),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -250,7 +319,7 @@ class _MainAppState extends State<MainApp> {
                     'pujjaabaskaran2005@gmail.com',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                       shadows: [
                         Shadow(
@@ -275,7 +344,7 @@ class _MainAppState extends State<MainApp> {
                       'github.com/PUJJAA-VBA',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -303,7 +372,34 @@ class _MainAppState extends State<MainApp> {
                       'linkedin.com/in/pujjaa-vba',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        shadows: [
+                          Shadow(
+                            color: Colors.black,
+                            blurRadius: 3,
+                            offset: Offset(1.5, 1.5),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              // https://leetcode.com/u/Pujjaa07/
+              InkWell(
+                onTap: () =>
+                    _launchURL(context, 'https://leetcode.com/u/Pujjaa07/'),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const [
+                    Icon(Icons.link, color: Colors.white),
+                    SizedBox(width: 8),
+                    Text(
+                      'leetcode.com/u/Pujjaa',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                         shadows: [
                           Shadow(
@@ -345,9 +441,10 @@ class _MainAppState extends State<MainApp> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.cyan.shade300,
-              Colors.blue.shade400,
-              Colors.indigo.shade500,
+              Colors.black12,
+              Colors.blueGrey,
+              // Colors.blue.shade400,
+              Colors.black,
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -373,7 +470,14 @@ class _MainAppState extends State<MainApp> {
                 color: Colors.white,
                 fontSize: 16,
                 fontWeight: FontWeight.w800,
-                fontFamily: 'Montserrat',
+                fontFamily: '<Montserrat>',
+                shadows: [
+                  Shadow(
+                    color: Colors.black,
+                    blurRadius: 3,
+                    offset: Offset(1.5, 1.5),
+                  ),
+                ],
               ),
             ),
           ],
@@ -396,12 +500,12 @@ class _MainAppState extends State<MainApp> {
               color: Colors.white,
               fontSize: 32,
               fontWeight: FontWeight.w800,
-              fontFamily: 'Montserrat',
+              fontFamily: '<Montserrat>',
               shadows: [
                 Shadow(
-                  blurRadius: 6.0,
-                  color: Colors.black.withOpacity(0.8),
-                  offset: const Offset(1.0, 1.0),
+                  color: Colors.black,
+                  blurRadius: 3,
+                  offset: Offset(1.5, 1.5),
                 ),
               ],
             ),
@@ -414,37 +518,37 @@ class _MainAppState extends State<MainApp> {
             children: [
               _buildSkillButton(
                 context,
-                'Software\nDevelopment',
+                'SOFTWARE\nDEVELOPMENT',
                 Icons.code,
-                () => _showSkillDialog(context, 'Software Development'),
+                () => _showSkillDialog(context, 'Software Development Skills'),
               ),
               _buildSkillButton(
                 context,
-                'Data\nAnalysis',
+                'DATA\nANALYTICS',
                 Icons.analytics,
-                () => _showSkillDialog(context, 'Data Analysis'),
+                () => _showSkillDialog(context, 'Data Analysis Skills'),
               ),
               _buildSkillButton(
                 context,
-                'Experiences',
+                'EXPERIENCES',
                 Icons.work_history,
                 () => _showexperiencesDialog(context),
               ),
               _buildSkillButton(
                 context,
-                'Projects',
+                'PROJECTS',
                 Icons.folder_copy_rounded,
                 () => _showProjectsDialog(context),
               ),
               _buildSkillButton(
                 context,
-                'Certifications',
+                'CERTIFICATIONS',
                 Icons.verified,
                 () => _showcertificationsDialog(context),
               ),
               _buildSkillButton(
                 context,
-                'Soft\nSkills',
+                'SOFT\nSKILLS',
                 Icons.stars_sharp,
                 () => _showsoftskillsDialog(context),
               ),
@@ -460,17 +564,16 @@ class _MainAppState extends State<MainApp> {
     final List<Map<String, String>> certifications = [
       {
         'title': 'AI Intermediate and Advanced',
-        'desc': 'Issued by Microsoft Learn Certification',
+        'desc': 'Issued by Microsoft Learn',
       },
-      {'title': 'Introduction to Golang', 'desc': 'Issued by Simplilearn'},
+      {'title': 'Golang Basics', 'desc': 'Issued by Simplilearn'},
       {
-        'title': 'Data Analytics',
+        'title': 'Virtual Internship in Data Analytics',
         'desc': 'Deloitte Australia - Forage Virtual Internship',
       },
-      {'title': 'Data Analytics using Power BI', 'desc': 'Issued by TechTip24'},
-      {'title': 'Python Coder', 'desc': 'Issued by Kaggle'},
+      {'title': 'Power BI Analytics', 'desc': 'Issued by TechTip24'},
       {
-        'title': 'CCNA: Introduction to Networks',
+        'title': 'CCNA: Networking',
         'desc': 'Issued by Cisco Networking Academy',
       },
       {
@@ -483,10 +586,10 @@ class _MainAppState extends State<MainApp> {
       builder: (context) {
         return AlertDialog(
           title: const Text(
-            'Certifications',
+            'CERTIFICATIONS',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontFamily: 'Montserrat',
+              fontFamily: '<Montserrat>',
             ),
           ),
           content: SizedBox(
@@ -547,10 +650,10 @@ class _MainAppState extends State<MainApp> {
       builder: (context) {
         return AlertDialog(
           title: const Text(
-            'Soft Skills',
+            'SOFT SKILLS',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontFamily: 'Montserrat',
+              fontFamily: '<Montserrat>',
             ),
           ),
           content: SizedBox(
@@ -564,7 +667,7 @@ class _MainAppState extends State<MainApp> {
                 return ListTile(
                   leading: const Icon(
                     Icons.stars_sharp,
-                    color: Color.fromARGB(255, 255, 193, 7),
+                    color: Colors.deepPurple,
                   ),
                   title: Text(
                     skill['title']!,
@@ -592,12 +695,12 @@ class _MainAppState extends State<MainApp> {
       {
         'title': 'AI Azure Intern',
         'desc':
-            'Edunet Foundation\nCompleted a 4-week Microsoft-AICTE-Edunet Foundation program, building foundational Azure and AI knowledge with hands-on skills in NLP, advanced Generative AI prompting, and core Azure services.',
+            'Edunet Foundation\nApplied NLP and advanced prompting with Microsoft Copilot & Gemini 2.5 Flash, achieving 85%+ accuracy.\nGained hands-on experience with Azure Fundamentals and AI services, including model deployment and API integration. ',
       },
       {
         'title': 'Data Analyst Intern',
         'desc':
-            'Oasis Infobyte\nCreated three interactive Excel dashboards handling 1,500+ rows using advanced functions, pivot tables, and VBA macros to convert raw Kaggle data into actionable business insights.',
+            'Oasis Infobyte\nBuilt Excel dashboards processing 1,500+ rows using pivot tables, and VBA Macros, reducing manual reporting time by 30%.\nTransformed Kaggle datasets into insights using Power BI & Excel through data cleaning, analysis, and visualization. ',
       },
     ];
     showDialog(
@@ -605,10 +708,10 @@ class _MainAppState extends State<MainApp> {
       builder: (context) {
         return AlertDialog(
           title: const Text(
-            'Experiences',
+            'EXPERIENCES',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontFamily: 'Montserrat',
+              fontFamily: '<Montserrat>',
             ),
           ),
           content: SizedBox(
@@ -622,7 +725,7 @@ class _MainAppState extends State<MainApp> {
                 return ListTile(
                   leading: const Icon(
                     Icons.work_history,
-                    color: Color.fromARGB(255, 120, 80, 190),
+                    color: Colors.deepPurple,
                   ),
                   title: Text(
                     exp['title']!,
@@ -648,24 +751,24 @@ class _MainAppState extends State<MainApp> {
   void _showProjectsDialog(BuildContext context) {
     final List<Map<String, String>> projects = [
       {
+        'title': 'Brewly–Flutter App',
+        'desc':
+            'Developing a cross-platform recipe app featuring 50+ beverages, achieving seamless UI/UX with Flutter & Dart.\nFirebase integration underway for real-time sync and secure authentication, enhancing scalability and user engagement. ',
+      },
+      {
         'title': 'Sentiment Analyzer CLI Tool',
         'desc':
-            'Engineered a command-line sentiment tool with VADER, Matplotlib & Gemini Flash 2.5 — cut dev time by 15%.',
+            'Engineered a CLI-based sentiment analysis tool with NLTK VADER, achieving accurate classification across multiple datasets.\nIntegrated Gemini AI, cutting development time by 15%, and added CSV input and dynamic visualizations for insights reporting.',
       },
       {
         'title': 'Online Task Manager',
         'desc':
-            'Led a team of 10 to build a web-based task manager with auth & filter views like Today, This Week, This Month.',
+            'Led development of a web-based Online Task Manager with user authentication and distinct filters (Today, This Week, This Month).\nDirected a 10-member team as Team Lead, overseeing vision, task allocation, and frontend/backend integration for reliable delivery. ',
       },
       {
         'title': 'Global Superstore Dashboard',
         'desc':
-            'Built an interactive Power BI dashboard analyzing sales, profit, and customer segments from Kaggle dataset.',
-      },
-      {
-        'title': 'Excel VBA Macro Formatter',
-        'desc':
-            'Automated text formatting in Excel using VBA macros — improved efficiency by 30%, accuracy by 93%.',
+            'Designed an interactive Power BI dashboard analyzing sales, profit, and customer trends across multiple regions.\nUsed Power Query Editor for ETL (Extract, Transform, Load), automating data preparation and improving analysis speed by 40%. ',
       },
     ];
     showDialog(
@@ -673,10 +776,10 @@ class _MainAppState extends State<MainApp> {
       builder: (context) {
         return AlertDialog(
           title: const Text(
-            'Projects',
+            'PROJECTS',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontFamily: 'Montserrat',
+              fontFamily: '<Montserrat>',
             ),
           ),
           content: SizedBox(
@@ -712,22 +815,93 @@ class _MainAppState extends State<MainApp> {
     );
   }
 
-  // ======= Skill Dialog (Software vs Data Analysis) =======
   void _showSkillDialog(BuildContext context, String skill) {
-    String content;
     IconData icon;
     Color color;
-    if (skill.contains('Software')) {
-      content =
-          '🚀 Software Development Skills\n\nProgramming Languages: C, C++, Java, Python, Dart\nLibraries/Frameworks: NumPy, Pandas, Flutter\nArtificial Intelligence/Machine Learning: AI Prompting (or Generative AI Prompting)\nDatabase: SQL, MySQL\nTools & Platforms: Visual Studio Code, Git, GitHub.';
+    List<TextSpan> contentSpans;
+
+    if (skill.contains('SOFTWARE')) {
+      contentSpans = [
+        // const TextSpan(
+        //   text: 'Software Development Skills\n\n',
+        //   style: TextStyle(fontWeight: FontWeight.bold),
+        // ),
+        const TextSpan(
+          text: 'Languages: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(text: 'Python, C, C++, Java, Dart\n'),
+        const TextSpan(
+          text: 'Libraries/Frameworks: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(text: 'NumPy, Pandas, Flutter\n'),
+        const TextSpan(
+          text: 'AI/ML: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(
+          text:
+              'Generative AI Prompting (Gemini, Copilot, ChatGPT), NLP Basics\n',
+        ),
+        const TextSpan(
+          text: 'Database: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(text: 'SQL, MySQL\n'),
+        const TextSpan(
+          text: 'Tools & Platforms: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(
+          text:
+              'Visual Studio Code, Git, GitHub, VS Code, Android Studio, Firebase (In Progress)\n',
+        ),
+      ];
       icon = Icons.code;
-      color = Colors.blue;
+      color = Colors.deepPurple;
     } else {
-      content =
-          '📊 Data Analysis Skills\n\nProgramming Languages: C, C++, Java, Python\nLibraries/Frameworks: NumPy, Pandas, Flutter\nArtificial Intelligence/Machine Learning: AI Prompting (or Generative AI Prompting)\nDatabase: SQL, MySQL\nTools & Platforms: Visual Studio Code, Microsoft Excel, VBA Macros, Microsoft Power BI, Git, Power Query, Tableau';
+      contentSpans = [
+        // const TextSpan(
+        //   text: 'Data Analysis Skills\n\n',
+        //   style: TextStyle(fontWeight: FontWeight.bold),
+        // ),
+        const TextSpan(
+          text: 'Languages: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(text: 'Python, C, C++, Java, Dart\n'),
+        const TextSpan(
+          text: 'Libraries/Frameworks: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(text: 'NumPy, Pandas, Flutter\n'),
+        const TextSpan(
+          text: 'AI/ML: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(
+          text:
+              'Generative AI Prompting (Gemini, Copilot, ChatGPT), NLP Basics\n',
+        ),
+        const TextSpan(
+          text: 'Database: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(text: 'SQL, MySQL\n'),
+        const TextSpan(
+          text: 'Tools & Platforms: ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        const TextSpan(
+          text:
+              'Visual Studio Code, Excel, VBA Macros, Power BI, Git, Power Query, Tableau\n',
+        ),
+      ];
       icon = Icons.analytics;
-      color = Colors.green;
+      color = Colors.deepPurple;
     }
+
     showDialog(
       context: context,
       builder: (context) {
@@ -739,7 +913,14 @@ class _MainAppState extends State<MainApp> {
               Text(skill),
             ],
           ),
-          content: Text(content),
+          content: SingleChildScrollView(
+            child: RichText(
+              text: TextSpan(
+                style: const TextStyle(color: Colors.black, fontSize: 14),
+                children: contentSpans,
+              ),
+            ),
+          ),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
@@ -750,6 +931,46 @@ class _MainAppState extends State<MainApp> {
       },
     );
   }
+
+  // // ======= Skill Dialog (Software vs Data Analysis) =======
+  // void _showSkillDialog(BuildContext context, String skill) {
+  //   String content;
+  //   IconData icon;
+  //   Color color;
+  //   if (skill.contains('SOFTWARE')) {
+  //     content =
+  //         '🚀 Software Development Skills\n\nLanguages: Python, C, C++, Java, Dart\nLibraries/Frameworks: NumPy, Pandas, Flutter\nAI/ML: Generative AI Prompting (Gemini, Copilot, ChatGPT), NLP Basics\nDatabase: SQL, MySQL\nTools & Platforms: Visual Studio Code, Git, GitHub, VS Code, Android Studio, Firebase (In Progress)';
+  //     icon = Icons.code;
+  //     // \nDatabase: SQL, MySQL\nTools & Platforms: Visual Studio Code, Git, GitHub.
+  //     color = Colors.black;
+  //   } else {
+  //     content =
+  //         '📊 Data Analysis Skills\n\nLanguages: Python, C, C++, Java, Dart\nLibraries/Frameworks: NumPy, Pandas, Flutter\nAI/ML: Generative AI Prompting (Gemini, Copilot, ChatGPT), NLP Basics\nDatabase: SQL, MySQL\nTools & Platforms: Visual Studio Code, Excel, VBA Macros, Power BI, Git, Power Query, Tableau';
+  //     icon = Icons.analytics;
+  //     color = Colors.black;
+  //   }
+  //   showDialog(
+  //     context: context,
+  //     builder: (context) {
+  //       return AlertDialog(
+  //         title: Row(
+  //           children: [
+  //             Icon(icon, color: color),
+  //             const SizedBox(width: 12),
+  //             Text(skill),
+  //           ],
+  //         ),
+  //         content: Text(content),
+  //         actions: [
+  //           TextButton(
+  //             onPressed: () => Navigator.pop(context),
+  //             child: const Text('Close'),
+  //           ),
+  //         ],
+  //       );
+  //     },
+  //   );
+  // }
 
   Future<void> _launchURL(BuildContext context, String urlString) async {
     final Uri url = Uri.parse(urlString);
