@@ -48,8 +48,8 @@ class _MainAppState extends State<MainApp> {
                               child: Center(
                                 child: Image.asset(
                                   'assets/image/bg_image1.png',
-                                  height: 400,
-                                  width: 400,
+                                  height: 800,
+                                  width: 800,
                                   fit: BoxFit.contain,
                                 ),
                               ),
