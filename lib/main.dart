@@ -66,7 +66,7 @@ class _MainAppState extends State<MainApp> {
                                       color: Colors.white,
                                       fontSize: 60,
                                       fontWeight: FontWeight.w800,
-                                      fontFamily: '<Montserrat>',
+                                      fontFamily: 'SpecialElite',
                                       letterSpacing: 4.5,
                                       shadows: [
                                         Shadow(
@@ -84,7 +84,7 @@ class _MainAppState extends State<MainApp> {
                                       color: Colors.white,
                                       fontSize: 55,
                                       fontWeight: FontWeight.w700,
-                                      fontFamily: '<Montserrat>',
+                                      fontFamily: 'SpecialElite',
                                       // fontFamily: 'FontdinerSwanky',
                                       letterSpacing: 1.5,
                                       shadows: [
@@ -128,8 +128,8 @@ class _MainAppState extends State<MainApp> {
                           borderRadius: BorderRadius.circular(15),
                         ),
                         margin: EdgeInsets.only(
-                          left: 150,
-                          right: 150,
+                          left: 50,
+                          right: 50,
                           bottom: 60,
                         ),
                         child: InkWell(
@@ -633,13 +633,13 @@ class _MainAppState extends State<MainApp> {
                 context,
                 'SOFTWARE\nDEVELOPMENT',
                 Icons.code,
-                () => _showSkillDialog(context, 'Software Development Skills'),
+                () => _showSkillDialog(context, 'Software Development'),
               ),
               _buildSkillButton(
                 context,
                 'DATA\nANALYTICS',
                 Icons.analytics,
-                () => _showSkillDialog(context, 'Data Analysis Skills'),
+                () => _showSkillDialog(context, 'Data Analysis '),
               ),
               _buildSkillButton(
                 context,

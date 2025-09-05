@@ -64546,7 +64546,7 @@ case 4:a.af(t.Pu).f.O_(A.agy(null,null,null,B.ER,null,B.ad,null,A.eO("Could not 
 case 3:return A.O(null,r)}})
 return A.P($async$i2,r)}}
 A.a5X.prototype={
-$1(a){var s,r,q,p=null,o="<Montserrat>",n=A.afP(0,new A.tu(A.aq9(p,p,new A.qU("assets/image/bg_image.jpg",p,p)),B.wV,p)),m=t.w,l=A.bB(a,p,m).w,k=B.c.av(178.5),j=t.kO,i=t.p
+$1(a){var s,r,q,p=null,o="SpecialElite",n=A.afP(0,new A.tu(A.aq9(p,p,new A.qU("assets/image/bg_image.jpg",p,p)),B.wV,p)),m=t.w,l=A.bB(a,p,m).w,k=B.c.av(178.5),j=t.kO,i=t.p
 l=A.lb(p,A.hJ(A.c([A.aeA(A.nE(A.c([A.eO("HELLO!",A.kg(p,p,B.i,p,p,p,p,p,o,p,p,60,p,p,B.d_,p,p,!0,p,4.5,p,p,p,A.c([new A.eM(A.bv(k,B.k.M()>>>16&255,B.k.M()>>>8&255,B.k.M()&255),B.qb,8)],j),p,p),p),B.IH,A.eO("I'm Pujjaa VBA",A.kg(p,p,B.i,p,p,p,p,p,o,p,p,55,p,p,B.b0,p,p,!0,p,1.5,p,p,p,A.c([new A.eM(A.bv(k,B.k.M()>>>16&255,B.k.M()>>>8&255,B.k.M()&255),B.qb,8)],j),p,p),p)],i),B.O,B.ca,B.ay),3)],i),B.O,B.ca,B.ay),p,l.a.b,p,B.A7,p)
 j=this.a
 k=j.So(a)
@@ -64554,7 +64554,7 @@ s=j.a12(a)
 m=A.bB(a,p,m).w
 r=A.c([B.k,B.hV,B.k],t.t_)
 q=A.At(15)
-return new A.mn(!0,A.a0L(B.dJ,A.c([n,A.ago(A.nE(A.c([l,k,s,A.lb(B.aK,A.o6(!1,!0,A.hJ(B.Cc,B.O,B.a0,B.bq),p,!0,p,p,p,p,p,p,p,p,new A.a5W(j,a),p,p,p,p),new A.dA(p,p,p,q,p,new A.jG(B.fj,B.fi,B.bR,r,p,p),B.aM),60,new A.aQ(150,0,150,60),p,m.a.a),B.vz],i),B.O,B.a0,B.ay))],i),B.iI),p)},
+return new A.mn(!0,A.a0L(B.dJ,A.c([n,A.ago(A.nE(A.c([l,k,s,A.lb(B.aK,A.o6(!1,!0,A.hJ(B.Cc,B.O,B.a0,B.bq),p,!0,p,p,p,p,p,p,p,p,new A.a5W(j,a),p,p,p,p),new A.dA(p,p,p,q,p,new A.jG(B.fj,B.fi,B.bR,r,p,p),B.aM),60,new A.aQ(50,0,50,60),p,m.a.a),B.vz],i),B.O,B.a0,B.ay))],i),B.iI),p)},
 $S:427}
 A.a5W.prototype={
 $0(){return this.a.i2(this.b,"https://drive.google.com/file/d/1Wgoge88bGFWnovLUVGGRqWDgGQLz76Hh/view?usp=drive_link")},
@@ -64572,10 +64572,10 @@ A.a5x.prototype={
 $0(){return this.a.i2(this.b,"https://www.hackerrank.com/profile/pujjaabaskaran21")},
 $S:0}
 A.a5Q.prototype={
-$0(){return this.a.Hf(this.b,"Software Development Skills")},
+$0(){return this.a.Hf(this.b,"Software Development")},
 $S:0}
 A.a5R.prototype={
-$0(){return this.a.Hf(this.b,"Data Analysis Skills")},
+$0(){return this.a.Hf(this.b,"Data Analysis ")},
 $S:0}
 A.a5S.prototype={
 $0(){return this.a.a_5(this.b)},
