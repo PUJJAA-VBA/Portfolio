@@ -114,7 +114,7 @@ class _MainAppState extends State<MainApp> {
                       Container(
                         alignment: Alignment.center,
                         height: 60,
-                        width: double.infinity,
+                        width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
@@ -157,7 +157,7 @@ class _MainAppState extends State<MainApp> {
                                 'Download Resume',
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 18,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                   shadows: [
                                     Shadow(
