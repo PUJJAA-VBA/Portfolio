@@ -294,7 +294,7 @@ class _MainAppState extends State<MainApp> {
                   '🚀 Aspiring Software Developer | Data + AI Enthusiasist | Flutter + Power BI',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 21,
                     fontWeight: FontWeight.w600,
                     color: Colors.white,
                     shadows: [
@@ -312,7 +312,7 @@ class _MainAppState extends State<MainApp> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 16,
+                    fontSize: 20,
                     height: 1.6,
                     shadows: [
                       Shadow(
@@ -459,6 +459,45 @@ class _MainAppState extends State<MainApp> {
                     SizedBox(width: 8),
                     Text(
                       'leetcode.com/u/Pujjaa',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        shadows: [
+                          Shadow(
+                            color: Colors.black,
+                            blurRadius: 3,
+                            offset: Offset(1.5, 1.5),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              // https://www.hackerrank.com/profile/pujjaabaskaran21
+              InkWell(
+                onTap: () => _launchURL(
+                  context,
+                  'https://www.hackerrank.com/profile/pujjaabaskaran21',
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const [
+                    Icon(
+                      Icons.link,
+                      color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black,
+                          blurRadius: 3,
+                          offset: Offset(1.5, 1.5),
+                        ),
+                      ],
+                    ),
+                    SizedBox(width: 8),
+                    Text(
+                      'hackerrank.com/pujjaa',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
