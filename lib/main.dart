@@ -64,10 +64,10 @@ class _MainAppState extends State<MainApp> {
                                     'HELLO!',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 75,
+                                      fontSize: 60,
                                       fontWeight: FontWeight.w800,
-                                      fontFamily: 'Barrio',
-                                      letterSpacing: 2.0,
+                                      fontFamily: '<Montserrat>',
+                                      letterSpacing: 4.5,
                                       shadows: [
                                         Shadow(
                                           blurRadius: 8.0,
@@ -82,9 +82,10 @@ class _MainAppState extends State<MainApp> {
                                     'I\'m Pujjaa VBA',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 70,
+                                      fontSize: 55,
                                       fontWeight: FontWeight.w700,
-                                      fontFamily: 'Barriecito',
+                                      fontFamily: '<Montserrat>',
+                                      // fontFamily: 'FontdinerSwanky',
                                       letterSpacing: 1.5,
                                       shadows: [
                                         Shadow(
@@ -139,7 +140,17 @@ class _MainAppState extends State<MainApp> {
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: const [
-                              Icon(Icons.link, color: Colors.white),
+                              Icon(
+                                Icons.link,
+                                color: Colors.white,
+                                shadows: [
+                                  Shadow(
+                                    color: Colors.black,
+                                    blurRadius: 3,
+                                    offset: Offset(1.5, 1.5),
+                                  ),
+                                ],
+                              ),
                               SizedBox(width: 8),
                               Text(
                                 'Download Resume',
@@ -217,21 +228,32 @@ class _MainAppState extends State<MainApp> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
-              Icon(Icons.person_outline_rounded, size: 32, color: Colors.white),
+              Icon(
+                Icons.person_outline_rounded,
+                size: 32,
+                color: Colors.white,
+                shadows: [
+                  Shadow(
+                    color: Colors.black,
+                    blurRadius: 3,
+                    offset: Offset(1.5, 1.5),
+                  ),
+                ],
+              ),
               SizedBox(width: 10),
               Text(
-                'About Me',
+                'ABOUT ME',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 32,
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.2,
-                  fontFamily: 'Barrio',
+                  fontFamily: '<Montserrat>',
                   shadows: [
                     Shadow(
-                      blurRadius: 6.0,
-                      color: Colors.black87,
-                      offset: Offset(1.0, 1.0),
+                      color: Colors.black,
+                      blurRadius: 3,
+                      offset: Offset(1.5, 1.5),
                     ),
                   ],
                 ),
@@ -313,7 +335,17 @@ class _MainAppState extends State<MainApp> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: const [
-                  Icon(Icons.email_outlined, color: Colors.white),
+                  Icon(
+                    Icons.email_outlined,
+                    color: Colors.white,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black,
+                        blurRadius: 3,
+                        offset: Offset(1.5, 1.5),
+                      ),
+                    ],
+                  ),
                   SizedBox(width: 8),
                   Text(
                     'pujjaabaskaran2005@gmail.com',
@@ -338,7 +370,17 @@ class _MainAppState extends State<MainApp> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
-                    Icon(Icons.code, color: Colors.white),
+                    Icon(
+                      Icons.code,
+                      color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black,
+                          blurRadius: 3,
+                          offset: Offset(1.5, 1.5),
+                        ),
+                      ],
+                    ),
                     SizedBox(width: 8),
                     Text(
                       'github.com/PUJJAA-VBA',
@@ -366,7 +408,17 @@ class _MainAppState extends State<MainApp> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
-                    Icon(Icons.link, color: Colors.white),
+                    Icon(
+                      Icons.link,
+                      color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black,
+                          blurRadius: 3,
+                          offset: Offset(1.5, 1.5),
+                        ),
+                      ],
+                    ),
                     SizedBox(width: 8),
                     Text(
                       'linkedin.com/in/pujjaa-vba',
@@ -393,7 +445,17 @@ class _MainAppState extends State<MainApp> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
-                    Icon(Icons.link, color: Colors.white),
+                    Icon(
+                      Icons.link,
+                      color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black,
+                          blurRadius: 3,
+                          offset: Offset(1.5, 1.5),
+                        ),
+                      ],
+                    ),
                     SizedBox(width: 8),
                     Text(
                       'leetcode.com/u/Pujjaa',
@@ -461,7 +523,18 @@ class _MainAppState extends State<MainApp> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, size: 45, color: Colors.white),
+            Icon(
+              icon,
+              size: 45,
+              color: Colors.white,
+              shadows: [
+                Shadow(
+                  color: Colors.black,
+                  blurRadius: 3,
+                  offset: Offset(1.5, 1.5),
+                ),
+              ],
+            ),
             const SizedBox(height: 12),
             Text(
               title,
@@ -495,7 +568,7 @@ class _MainAppState extends State<MainApp> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'Technical Skills',
+            'TECHNICAL SKILLS',
             style: TextStyle(
               color: Colors.white,
               fontSize: 32,
