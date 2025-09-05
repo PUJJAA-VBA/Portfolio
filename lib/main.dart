@@ -64,7 +64,7 @@ class _MainAppState extends State<MainApp> {
                                     'HELLO!',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 60,
+                                      fontSize: 55,
                                       fontWeight: FontWeight.w800,
                                       fontFamily: 'SpecialElite',
                                       letterSpacing: 4.5,
@@ -82,7 +82,7 @@ class _MainAppState extends State<MainApp> {
                                     'I\'m Pujjaa VBA',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 55,
+                                      fontSize: 50,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: 'SpecialElite',
                                       // fontFamily: 'FontdinerSwanky',

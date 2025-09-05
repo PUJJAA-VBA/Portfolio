@@ -64547,7 +64547,7 @@ case 3:return A.O(null,r)}})
 return A.P($async$i2,r)}}
 A.a5X.prototype={
 $1(a){var s,r,q,p=null,o="SpecialElite",n=A.afP(0,new A.tu(A.aq9(p,p,new A.qU("assets/image/bg_image.jpg",p,p)),B.wV,p)),m=t.w,l=A.bB(a,p,m).w,k=B.c.av(178.5),j=t.kO,i=t.p
-l=A.lb(p,A.hJ(A.c([A.aeA(A.nE(A.c([A.eO("HELLO!",A.kg(p,p,B.i,p,p,p,p,p,o,p,p,60,p,p,B.d_,p,p,!0,p,4.5,p,p,p,A.c([new A.eM(A.bv(k,B.k.M()>>>16&255,B.k.M()>>>8&255,B.k.M()&255),B.qb,8)],j),p,p),p),B.IH,A.eO("I'm Pujjaa VBA",A.kg(p,p,B.i,p,p,p,p,p,o,p,p,55,p,p,B.b0,p,p,!0,p,1.5,p,p,p,A.c([new A.eM(A.bv(k,B.k.M()>>>16&255,B.k.M()>>>8&255,B.k.M()&255),B.qb,8)],j),p,p),p)],i),B.O,B.ca,B.ay),3)],i),B.O,B.ca,B.ay),p,l.a.b,p,B.A7,p)
+l=A.lb(p,A.hJ(A.c([A.aeA(A.nE(A.c([A.eO("HELLO!",A.kg(p,p,B.i,p,p,p,p,p,o,p,p,55,p,p,B.d_,p,p,!0,p,4.5,p,p,p,A.c([new A.eM(A.bv(k,B.k.M()>>>16&255,B.k.M()>>>8&255,B.k.M()&255),B.qb,8)],j),p,p),p),B.IH,A.eO("I'm Pujjaa VBA",A.kg(p,p,B.i,p,p,p,p,p,o,p,p,50,p,p,B.b0,p,p,!0,p,1.5,p,p,p,A.c([new A.eM(A.bv(k,B.k.M()>>>16&255,B.k.M()>>>8&255,B.k.M()&255),B.qb,8)],j),p,p),p)],i),B.O,B.ca,B.ay),3)],i),B.O,B.ca,B.ay),p,l.a.b,p,B.A7,p)
 j=this.a
 k=j.So(a)
 s=j.a12(a)
