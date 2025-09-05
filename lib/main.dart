@@ -66,7 +66,7 @@ class _MainAppState extends State<MainApp> {
                                       color: Colors.white,
                                       fontSize: 42,
                                       fontWeight: FontWeight.w800,
-                                      fontFamily: 'Montserrat',
+                                      fontFamily: '<Montserrat>',
                                       letterSpacing: 2.0,
                                       shadows: [
                                         Shadow(
@@ -84,7 +84,7 @@ class _MainAppState extends State<MainApp> {
                                       color: Colors.white,
                                       fontSize: 38,
                                       fontWeight: FontWeight.w700,
-                                      fontFamily: 'Montserrat',
+                                      fontFamily: '<Montserrat>',
                                       letterSpacing: 1.5,
                                       shadows: [
                                         Shadow(
@@ -178,7 +178,7 @@ class _MainAppState extends State<MainApp> {
                   fontSize: 32,
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.2,
-                  fontFamily: 'Montserrat',
+                  fontFamily: '<Montserrat>',
                   shadows: [
                     Shadow(
                       blurRadius: 6.0,
@@ -214,7 +214,7 @@ class _MainAppState extends State<MainApp> {
             child: Column(
               children: const [
                 Text(
-                  '🚀 Aspiring Software Developer | Flutter Enthusiast | Data Analyst',
+                  '🚀 Aspiring Software Developer | Data + AI Enthusiasist | Flutter + Power BI',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 18,
@@ -224,7 +224,7 @@ class _MainAppState extends State<MainApp> {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'An aspiring and passionate developer with solid foundations in Python, Java, and C/C++, and basic hands-on experience in Flutter for crafting cross-platform apps. My strengths lie in transforming raw data into impactful visual stories using Power BI, Excel, and Tableau. I also bring efficiency to workflows through AI prompting and automation using VBA.',
+                  'Motivated Software Developer skilled in Python, Java, C/C++, and Flutter, with hands-on experience in building cross-platform applications and data-driven solutions. Proficient in Power BI, Excel, Tableau, and SQL, with growing expertise in Microsoft Azure and Generative AI. Proven leader with strong communication, collaboration, and work ethic, recognized for problem-solving and delivering scalable, user-focused software.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,

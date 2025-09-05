@@ -22,7 +22,7 @@ flutter:
   assets:
     - assets/image/bg_image.jpg
     - assets/image/bg_image1.png
-    - assets/docs/Pujjaa VBA_Software Developer_Resume (Online).pdf
+    - assets/docs/Pujjaa_Resume.pdf
     
 
   fonts:
