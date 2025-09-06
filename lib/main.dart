@@ -295,7 +295,7 @@ class _MainAppState extends State<MainApp> {
                   '🚀 Aspiring Software Developer | Data + AI Enthusiasist | Flutter + Power BI',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 21,
+                    fontSize: 20,
                     fontWeight: FontWeight.w600,
                     color: Colors.white,
                     shadows: [
@@ -313,7 +313,7 @@ class _MainAppState extends State<MainApp> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 19,
                     height: 1.6,
                     shadows: [
                       Shadow(
