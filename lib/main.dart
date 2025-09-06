@@ -61,7 +61,7 @@ class _MainAppState extends State<MainApp> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'HELLO!',
+                                    'HELLO! ',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 55,
@@ -154,11 +154,13 @@ class _MainAppState extends State<MainApp> {
                               ),
                               SizedBox(width: 8),
                               Text(
-                                'Download Resume',
+                                'DOWNLOAD RESUME',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
+                                  fontFamily: '<Montserrat>',
+                                  // letterSpacing: 2.0,
                                   shadows: [
                                     Shadow(
                                       color: Colors.black,
@@ -249,7 +251,7 @@ class _MainAppState extends State<MainApp> {
                   fontSize: 32,
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.2,
-                  fontFamily: '<Montserrat>',
+                  fontFamily: 'SpecialElite',
                   shadows: [
                     Shadow(
                       color: Colors.black,
@@ -503,6 +505,7 @@ class _MainAppState extends State<MainApp> {
                         color: Colors.white,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
+
                         shadows: [
                           Shadow(
                             color: Colors.black,
@@ -583,6 +586,7 @@ class _MainAppState extends State<MainApp> {
                 color: Colors.white,
                 fontSize: 16,
                 fontWeight: FontWeight.w800,
+                // letterSpacing: 2.0,
                 fontFamily: '<Montserrat>',
                 shadows: [
                   Shadow(
@@ -608,12 +612,12 @@ class _MainAppState extends State<MainApp> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'TECHNICAL SKILLS',
+            'KNOW MORE',
             style: TextStyle(
               color: Colors.white,
               fontSize: 32,
               fontWeight: FontWeight.w800,
-              fontFamily: '<Montserrat>',
+              fontFamily: 'SpecialElite',
               shadows: [
                 Shadow(
                   color: Colors.black,
@@ -631,13 +635,13 @@ class _MainAppState extends State<MainApp> {
             children: [
               _buildSkillButton(
                 context,
-                'SOFTWARE\nDEVELOPMENT',
+                'SOFTWARE\nDEVELOPMENT\nSKILLS',
                 Icons.code,
                 () => _showSkillDialog(context, 'Software Development'),
               ),
               _buildSkillButton(
                 context,
-                'DATA\nANALYTICS',
+                'DATA\nANALYTICS\nSKILLS',
                 Icons.analytics,
                 () => _showSkillDialog(context, 'Data Analysis '),
               ),
