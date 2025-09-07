@@ -37771,7 +37771,7 @@ s=A.aaS(a)
 r=t.w
 q=A.bz(a,B.f9,r).w
 p=s.Q
-if(p==null)p=B.Aj
+if(p==null)p=B.Ai
 o=q.f.a1(0,p)
 n=A.ahf(a)
 m=s.at
@@ -37852,7 +37852,7 @@ gcQ(){return B.a0},
 gds(){return B.a0},
 gfG(){return this.gHF().f},
 gfV(){return this.gHF().z},
-goh(){return B.Af}}
+goh(){return B.Ae}}
 A.nN.prototype={
 gq(a){var s=this
 return A.br([s.gcH(),s.b,s.gcQ(),s.gds(),s.e,s.f,s.gcN(),s.gfG(),s.gfV(),s.goh(),s.z,s.Q,s.as,s.at])},
@@ -64562,7 +64562,7 @@ V(a){return new A.u6(new A.ex(new A.a5X(this),null),!1,null)},
 lr(a,b,c,d){var s=null,r=A.bz(a,s,t.w).w.a.a,q=r>600?r*0.25:r*0.4,p=A.c([B.fI,B.dl,B.j],t.t_),o=A.r0(20),n=A.c([new A.dn(0,B.fn,A.bv(64,B.j.M()>>>16&255,B.j.M()>>>8&255,B.j.M()&255),B.FA,8)],t.sq)
 return A.RD(s,A.jq(s,A.jp(A.c([A.aeS(c,B.i,s,A.c([new A.eO(B.j,new A.n(1.5,1.5),3)],t.kO),45),B.IW,A.hR(b,B.JY,B.cr)],t.p),B.J,B.bQ,B.am),new A.dm(s,s,s,o,n,new A.iu(B.dN,B.dM,B.by,p,s,s),B.aH),q,B.A7,s,q),B.aK,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,d,s,s,s,s,s,s)},
 a14(a){var s=this,r=null,q=t.p
-return A.jq(r,A.jp(A.c([A.hR("KNOW MORE",A.kj(r,r,B.i,r,r,r,r,r,"SpecialElite",r,r,32,r,r,B.d0,r,r,!0,r,r,r,r,r,A.c([new A.eO(B.j,new A.n(1.5,1.5),3)],t.kO),r,r),r),B.iH,A.aca(B.iY,A.c([s.lr(a,"SOFTWARE\nDEVELOPMENT\nSKILLS",B.hy,new A.a5M(s,a)),s.lr(a,"DATA\nANALYTICS\nSKILLS",B.kF,new A.a5N(s,a)),s.lr(a,"EXPERIENCES",B.kJ,new A.a5O(s,a)),s.lr(a,"PROJECTS",B.kI,new A.a5P(s,a)),s.lr(a,"CERTIFICATIONS",B.AC,new A.a5Q(s,a)),s.lr(a,"SOFT\nSKILLS",B.kH,new A.a5R(s,a))],q),0,0)],q),B.J,B.M,B.am),r,r,r,B.Ai,1/0)},
+return A.jq(r,A.jp(A.c([A.hR("KNOW MORE",A.kj(r,r,B.i,r,r,r,r,r,"SpecialElite",r,r,32,r,r,B.d0,r,r,!0,r,r,r,r,r,A.c([new A.eO(B.j,new A.n(1.5,1.5),3)],t.kO),r,r),r),B.iH,A.aca(B.iY,A.c([s.lr(a,"SOFTWARE\nDEVELOPMENT\nSKILLS",B.hy,new A.a5M(s,a)),s.lr(a,"DATA\nANALYTICS\nSKILLS",B.kF,new A.a5N(s,a)),s.lr(a,"EXPERIENCES",B.kJ,new A.a5O(s,a)),s.lr(a,"PROJECTS",B.kI,new A.a5P(s,a)),s.lr(a,"CERTIFICATIONS",B.AC,new A.a5Q(s,a)),s.lr(a,"SOFT\nSKILLS",B.kH,new A.a5R(s,a))],q),0,0)],q),B.J,B.M,B.am),r,r,r,B.Ah,1/0)},
 a_6(a){A.N6(new A.a5D(this),a,t.z)},
 a_8(a){var s=t.N
 A.N6(new A.a5L(A.c([A.ar(["title","Leadership","desc","Guiding and motivating teams to success"],s,s),A.ar(["title","Effective Communication","desc","Clear verbal & written communication"],s,s),A.ar(["title","Analytical Thinking","desc","Breaking down complex problems logically"],s,s),A.ar(["title","Strong Work Ethic","desc","Committed and consistent in delivery"],s,s)],t.m0)),a,t.z)},
@@ -64601,7 +64601,7 @@ j=t.t_
 s=A.c([B.fI,B.dl,B.j],j)
 r=A.r0(20)
 q=A.c([new A.dn(0,B.fn,A.bv(B.c.av(76.5),B.j.M()>>>16&255,B.j.M()>>>8&255,B.j.M()&255),B.Fy,12)],t.sq)
-s=A.jq(o,A.jp(A.c([i,B.iH,A.jq(o,A.jp(B.D8,B.J,B.M,B.am),new A.dm(o,o,o,r,q,new A.iu(B.dN,B.dM,B.by,s,o,o),B.aH),o,o,B.Ag,o),B.iH],h),B.J,B.M,B.am),o,o,o,B.Ah,1/0)
+s=A.jq(o,A.jp(A.c([i,B.iH,A.jq(o,A.jp(B.D8,B.J,B.M,B.am),new A.dm(o,o,o,r,q,new A.iu(B.dN,B.dM,B.by,s,o,o),B.aH),o,o,B.Af,o),B.iH],h),B.J,B.M,B.am),o,o,o,B.Ag,1/0)
 q=this.a
 r=q.a14(a)
 i=A.bz(a,o,l).w
@@ -64610,7 +64610,7 @@ p=A.r0(15)
 i=A.jq(B.aF,A.lK(!1,!0,A.mq(B.BD,B.J,B.M,B.aP,0),o,!0,o,o,o,o,o,o,o,o,new A.a5S(q,a),o,o,o,o),new A.dm(o,o,o,p,o,new A.iu(B.dN,B.dM,B.by,j,o,o),B.aH),60,new A.aN(50,0,50,25),o,i.a.a)
 l=A.bz(a,o,l).w
 j=A.r0(15)
-return new A.mr(!0,A.a0L(B.dL,A.c([m,A.agr(A.jp(A.c([k,s,r,i,A.jq(B.aF,A.jp(A.c([B.H9,B.vC,A.aca(B.iY,A.c([B.H8,A.lK(!1,!0,B.Hb,o,!0,o,o,o,o,o,o,o,o,new A.a5T(q,a),o,o,o,o),A.lK(!1,!0,B.Hc,o,!0,o,o,o,o,o,o,o,o,new A.a5U(q,a),o,o,o,o),A.lK(!1,!0,B.Hd,o,!0,o,o,o,o,o,o,o,o,new A.a5V(q,a),o,o,o,o),A.lK(!1,!0,B.Ha,o,!0,o,o,o,o,o,o,o,o,new A.a5W(q,a),o,o,o,o)],h),10,20)],h),B.J,B.M,B.aP),new A.dm(o,o,o,j,o,B.Bs,B.aH),o,B.Ad,B.Ae,l.a.a)],h),B.J,B.M,B.am))],h),B.iI),o)},
+return new A.mr(!0,A.a0L(B.dL,A.c([m,A.agr(A.jp(A.c([k,s,r,i,A.jq(B.aF,A.jp(A.c([B.H9,B.vC,A.aca(B.iY,A.c([B.H8,A.lK(!1,!0,B.Hb,o,!0,o,o,o,o,o,o,o,o,new A.a5T(q,a),o,o,o,o),A.lK(!1,!0,B.Hc,o,!0,o,o,o,o,o,o,o,o,new A.a5U(q,a),o,o,o,o),A.lK(!1,!0,B.Hd,o,!0,o,o,o,o,o,o,o,o,new A.a5V(q,a),o,o,o,o),A.lK(!1,!0,B.Ha,o,!0,o,o,o,o,o,o,o,o,new A.a5W(q,a),o,o,o,o)],h),10,20)],h),B.J,B.M,B.aP),new A.dm(o,o,o,j,o,B.Bs,B.aH),o,B.Aj,B.Ad,l.a.a)],h),B.J,B.M,B.am))],h),B.iI),o)},
 $S:427}
 A.a5S.prototype={
 $0(){return this.a.fO(this.b,"https://drive.google.com/file/d/1Wgoge88bGFWnovLUVGGRqWDgGQLz76Hh/view?usp=drive_link")},
@@ -67567,14 +67567,14 @@ B.A9=new A.aN(15,5,15,10)
 B.Aa=new A.aN(16,0,16,0)
 B.Ab=new A.aN(16,4,16,4)
 B.Ac=new A.aN(20,0,20,0)
-B.Ad=new A.aN(20,0,20,20)
-B.Ae=new A.aN(20,16,20,16)
-B.Af=new A.aN(24,0,24,24)
-B.Ag=new A.aN(24,24,24,24)
-B.Ah=new A.aN(24,48,24,48)
-B.Ai=new A.aN(32,32,32,32)
-B.Aj=new A.aN(40,24,40,24)
+B.Ad=new A.aN(20,16,20,16)
+B.Ae=new A.aN(24,0,24,24)
+B.Af=new A.aN(24,24,24,24)
+B.Ag=new A.aN(24,48,24,48)
+B.Ah=new A.aN(32,32,32,32)
+B.Ai=new A.aN(40,24,40,24)
 B.fY=new A.aN(4,0,4,0)
+B.Aj=new A.aN(50,0,50,20)
 B.Ak=new A.aN(8,0,8,0)
 B.Al=new A.aN(8,4,8,4)
 B.Am=new A.t_(null)
