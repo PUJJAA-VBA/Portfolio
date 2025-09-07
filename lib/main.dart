@@ -177,10 +177,13 @@ class _MainAppState extends State<MainApp> {
                       // const SizedBox(height: 10),
                       Container(
                         alignment: Alignment.center,
-                        height: 90,
                         width: MediaQuery.of(context).size.width,
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 16,
+                          horizontal: 20,
+                        ),
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             colors: [
                               Colors.black,
                               Colors.blueGrey,
@@ -191,21 +194,17 @@ class _MainAppState extends State<MainApp> {
                           ),
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        margin: EdgeInsets.only(
-                          left: 60,
-                          right: 60,
-                          bottom: 60,
+                        margin: const EdgeInsets.only(
+                          left: 20,
+                          right: 20,
+                          bottom: 20,
                         ),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
-                          // mainAxisAlignment: MainAxisAlignment.center,
-                          // crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Row(
-                              // mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: const [
+                              children: [
                                 Icon(
                                   Icons.phone_in_talk_sharp,
                                   color: Colors.white,
@@ -224,7 +223,6 @@ class _MainAppState extends State<MainApp> {
                                     color: Colors.white,
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
-                                    // decoration: TextDecoration.underline,
                                     shadows: [
                                       Shadow(
                                         color: Colors.black,
@@ -236,13 +234,17 @@ class _MainAppState extends State<MainApp> {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 10),
-                            Row(
+                            const SizedBox(height: 8),
+
+                            // ✅ Wrap makes the links auto-break into new lines on smaller screens
+                            Wrap(
+                              alignment: WrapAlignment.center,
+                              spacing: 20,
+                              runSpacing: 10,
                               children: [
-                                const SizedBox(width: 35),
                                 const Row(
                                   mainAxisSize: MainAxisSize.min,
-                                  children: const [
+                                  children: [
                                     Icon(
                                       Icons.email_outlined,
                                       color: Colors.white,
@@ -259,9 +261,8 @@ class _MainAppState extends State<MainApp> {
                                       'pujjaabaskaran2005@gmail.com',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 17,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.bold,
-                                        // decoration: TextDecoration.underline,
                                         shadows: [
                                           Shadow(
                                             color: Colors.black,
@@ -273,8 +274,6 @@ class _MainAppState extends State<MainApp> {
                                     ),
                                   ],
                                 ),
-
-                                const SizedBox(width: 10),
                                 InkWell(
                                   onTap: () => _launchURL(
                                     context,
@@ -282,7 +281,7 @@ class _MainAppState extends State<MainApp> {
                                   ),
                                   child: const Row(
                                     mainAxisSize: MainAxisSize.min,
-                                    children: const [
+                                    children: [
                                       Icon(
                                         Icons.code,
                                         color: Colors.white,
@@ -299,7 +298,7 @@ class _MainAppState extends State<MainApp> {
                                         'github.com/PUJJAA-VBA',
                                         style: TextStyle(
                                           color: Colors.white,
-                                          fontSize: 17,
+                                          fontSize: 16,
                                           fontWeight: FontWeight.bold,
                                           shadows: [
                                             Shadow(
@@ -313,15 +312,14 @@ class _MainAppState extends State<MainApp> {
                                     ],
                                   ),
                                 ),
-                                const SizedBox(width: 10),
                                 InkWell(
                                   onTap: () => _launchURL(
                                     context,
                                     'https://www.linkedin.com/in/pujjaa-vba/',
                                   ),
-                                  child: Row(
+                                  child: const Row(
                                     mainAxisSize: MainAxisSize.min,
-                                    children: const [
+                                    children: [
                                       Icon(
                                         Icons.link,
                                         color: Colors.white,
@@ -338,7 +336,7 @@ class _MainAppState extends State<MainApp> {
                                         'linkedin.com/in/pujjaa-vba',
                                         style: TextStyle(
                                           color: Colors.white,
-                                          fontSize: 18,
+                                          fontSize: 16,
                                           fontWeight: FontWeight.bold,
                                           shadows: [
                                             Shadow(
@@ -352,15 +350,14 @@ class _MainAppState extends State<MainApp> {
                                     ],
                                   ),
                                 ),
-                                const SizedBox(width: 10),
                                 InkWell(
                                   onTap: () => _launchURL(
                                     context,
                                     'https://leetcode.com/u/Pujjaa07/',
                                   ),
-                                  child: Row(
+                                  child: const Row(
                                     mainAxisSize: MainAxisSize.min,
-                                    children: const [
+                                    children: [
                                       Icon(
                                         Icons.link,
                                         color: Colors.white,
@@ -377,7 +374,7 @@ class _MainAppState extends State<MainApp> {
                                         'leetcode.com/u/Pujjaa',
                                         style: TextStyle(
                                           color: Colors.white,
-                                          fontSize: 18,
+                                          fontSize: 16,
                                           fontWeight: FontWeight.bold,
                                           shadows: [
                                             Shadow(
@@ -391,15 +388,14 @@ class _MainAppState extends State<MainApp> {
                                     ],
                                   ),
                                 ),
-                                const SizedBox(width: 10),
                                 InkWell(
                                   onTap: () => _launchURL(
                                     context,
                                     'https://www.hackerrank.com/profile/pujjaabaskaran21',
                                   ),
-                                  child: Row(
+                                  child: const Row(
                                     mainAxisSize: MainAxisSize.min,
-                                    children: const [
+                                    children: [
                                       Icon(
                                         Icons.link,
                                         color: Colors.white,
@@ -416,9 +412,8 @@ class _MainAppState extends State<MainApp> {
                                         'hackerrank.com/pujjaa',
                                         style: TextStyle(
                                           color: Colors.white,
-                                          fontSize: 18,
+                                          fontSize: 16,
                                           fontWeight: FontWeight.bold,
-
                                           shadows: [
                                             Shadow(
                                               color: Colors.black,
@@ -888,6 +883,7 @@ class _MainAppState extends State<MainApp> {
     final List<Map<String, String>> experiences = [
       {
         'title': 'AI Azure Intern',
+
         'org': 'Edunet Foundation',
         'year': 'May 2025 - Jun 2025',
         'desc':
