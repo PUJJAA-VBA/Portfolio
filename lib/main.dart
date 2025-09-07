@@ -195,8 +195,8 @@ class _MainAppState extends State<MainApp> {
                           borderRadius: BorderRadius.circular(15),
                         ),
                         margin: const EdgeInsets.only(
-                          left: 20,
-                          right: 20,
+                          left: 50,
+                          right: 50,
                           bottom: 20,
                         ),
                         child: Column(
