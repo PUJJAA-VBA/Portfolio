@@ -64,7 +64,7 @@ class _MainAppState extends State<MainApp> {
                                     'HELLO! ',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 55,
+                                      fontSize: 45,
                                       fontWeight: FontWeight.w800,
                                       fontFamily: 'SpecialElite',
                                       letterSpacing: 4.5,
@@ -82,7 +82,7 @@ class _MainAppState extends State<MainApp> {
                                     'I\'m Pujjaa VBA',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 50,
+                                      fontSize: 40,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: 'SpecialElite',
                                       // fontFamily: 'FontdinerSwanky',
@@ -130,7 +130,7 @@ class _MainAppState extends State<MainApp> {
                         margin: EdgeInsets.only(
                           left: 50,
                           right: 50,
-                          bottom: 60,
+                          bottom: 25,
                         ),
                         child: InkWell(
                           onTap: () => _launchURL(
@@ -174,41 +174,268 @@ class _MainAppState extends State<MainApp> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 20),
-                      // Container(
-                      //   padding: const EdgeInsets.all(24),
-                      //   decoration: BoxDecoration(
-                      //     gradient: LinearGradient(
-                      //       colors: [
-                      //         const Color.fromARGB(255, 61, 89, 103),
-                      //         Colors.indigo.shade600,
-                      //       ],
-                      //       begin: Alignment.topLeft,
-                      //       end: Alignment.bottomRight,
-                      //     ),
-                      //     borderRadius: BorderRadius.circular(20),
-                      //     boxShadow: [
-                      //       BoxShadow(
-                      //         color: Colors.black.withOpacity(0.3),
-                      //         blurRadius: 12,
-                      //         offset: const Offset(0, 6),
-                      //       ),
-                      //     ],
-                      //   ),
-                      //   child: Column(
-                      //     children: const [
-                      //       Text(
-                      //         'Download Resume - PUJJAA VBA',
-                      //         textAlign: TextAlign.center,
-                      //         style: TextStyle(
-                      //           fontSize: 18,
-                      //           fontWeight: FontWeight.w600,
-                      //           color: Colors.white,
-                      //         ),
-                      //       ),
-                      //     ],
-                      //   ),
-                      // ),
+                      // const SizedBox(height: 10),
+                      Container(
+                        alignment: Alignment.center,
+                        height: 90,
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [
+                              Colors.black,
+                              Colors.blueGrey,
+                              Colors.black,
+                            ],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                          ),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        margin: EdgeInsets.only(
+                          left: 60,
+                          right: 60,
+                          bottom: 60,
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          // mainAxisAlignment: MainAxisAlignment.center,
+                          // crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Row(
+                              // mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: const [
+                                Icon(
+                                  Icons.phone_in_talk_sharp,
+                                  color: Colors.white,
+                                  shadows: [
+                                    Shadow(
+                                      color: Colors.black,
+                                      blurRadius: 3,
+                                      offset: Offset(1.5, 1.5),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(width: 8),
+                                Text(
+                                  'CONTACT ME',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    // decoration: TextDecoration.underline,
+                                    shadows: [
+                                      Shadow(
+                                        color: Colors.black,
+                                        blurRadius: 3,
+                                        offset: Offset(1.5, 1.5),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 10),
+                            Row(
+                              children: [
+                                const SizedBox(width: 35),
+                                const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: const [
+                                    Icon(
+                                      Icons.email_outlined,
+                                      color: Colors.white,
+                                      shadows: [
+                                        Shadow(
+                                          color: Colors.black,
+                                          blurRadius: 3,
+                                          offset: Offset(1.5, 1.5),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(width: 8),
+                                    Text(
+                                      'pujjaabaskaran2005@gmail.com',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 17,
+                                        fontWeight: FontWeight.bold,
+                                        // decoration: TextDecoration.underline,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.black,
+                                            blurRadius: 3,
+                                            offset: Offset(1.5, 1.5),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+
+                                const SizedBox(width: 10),
+                                InkWell(
+                                  onTap: () => _launchURL(
+                                    context,
+                                    'https://github.com/PUJJAA-VBA',
+                                  ),
+                                  child: const Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: const [
+                                      Icon(
+                                        Icons.code,
+                                        color: Colors.white,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.black,
+                                            blurRadius: 3,
+                                            offset: Offset(1.5, 1.5),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(width: 8),
+                                      Text(
+                                        'github.com/PUJJAA-VBA',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 17,
+                                          fontWeight: FontWeight.bold,
+                                          shadows: [
+                                            Shadow(
+                                              color: Colors.black,
+                                              blurRadius: 3,
+                                              offset: Offset(1.5, 1.5),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                InkWell(
+                                  onTap: () => _launchURL(
+                                    context,
+                                    'https://www.linkedin.com/in/pujjaa-vba/',
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: const [
+                                      Icon(
+                                        Icons.link,
+                                        color: Colors.white,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.black,
+                                            blurRadius: 3,
+                                            offset: Offset(1.5, 1.5),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(width: 8),
+                                      Text(
+                                        'linkedin.com/in/pujjaa-vba',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                          shadows: [
+                                            Shadow(
+                                              color: Colors.black,
+                                              blurRadius: 3,
+                                              offset: Offset(1.5, 1.5),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                InkWell(
+                                  onTap: () => _launchURL(
+                                    context,
+                                    'https://leetcode.com/u/Pujjaa07/',
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: const [
+                                      Icon(
+                                        Icons.link,
+                                        color: Colors.white,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.black,
+                                            blurRadius: 3,
+                                            offset: Offset(1.5, 1.5),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(width: 8),
+                                      Text(
+                                        'leetcode.com/u/Pujjaa',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                          shadows: [
+                                            Shadow(
+                                              color: Colors.black,
+                                              blurRadius: 3,
+                                              offset: Offset(1.5, 1.5),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                InkWell(
+                                  onTap: () => _launchURL(
+                                    context,
+                                    'https://www.hackerrank.com/profile/pujjaabaskaran21',
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: const [
+                                      Icon(
+                                        Icons.link,
+                                        color: Colors.white,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.black,
+                                            blurRadius: 3,
+                                            offset: Offset(1.5, 1.5),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(width: 8),
+                                      Text(
+                                        'hackerrank.com/pujjaa',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+
+                                          shadows: [
+                                            Shadow(
+                                              color: Colors.black,
+                                              blurRadius: 3,
+                                              offset: Offset(1.5, 1.5),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -330,196 +557,6 @@ class _MainAppState extends State<MainApp> {
             ),
           ),
           const SizedBox(height: 32),
-          Wrap(
-            spacing: 32,
-            runSpacing: 16,
-            alignment: WrapAlignment.center,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: const [
-                  Icon(
-                    Icons.email_outlined,
-                    color: Colors.white,
-                    shadows: [
-                      Shadow(
-                        color: Colors.black,
-                        blurRadius: 3,
-                        offset: Offset(1.5, 1.5),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 8),
-                  Text(
-                    'pujjaabaskaran2005@gmail.com',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          blurRadius: 3,
-                          offset: Offset(1.5, 1.5),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              InkWell(
-                onTap: () =>
-                    _launchURL(context, 'https://github.com/PUJJAA-VBA'),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const [
-                    Icon(
-                      Icons.code,
-                      color: Colors.white,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          blurRadius: 3,
-                          offset: Offset(1.5, 1.5),
-                        ),
-                      ],
-                    ),
-                    SizedBox(width: 8),
-                    Text(
-                      'github.com/PUJJAA-VBA',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        shadows: [
-                          Shadow(
-                            color: Colors.black,
-                            blurRadius: 3,
-                            offset: Offset(1.5, 1.5),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              InkWell(
-                onTap: () => _launchURL(
-                  context,
-                  'https://www.linkedin.com/in/pujjaa-vba/',
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const [
-                    Icon(
-                      Icons.link,
-                      color: Colors.white,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          blurRadius: 3,
-                          offset: Offset(1.5, 1.5),
-                        ),
-                      ],
-                    ),
-                    SizedBox(width: 8),
-                    Text(
-                      'linkedin.com/in/pujjaa-vba',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        shadows: [
-                          Shadow(
-                            color: Colors.black,
-                            blurRadius: 3,
-                            offset: Offset(1.5, 1.5),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              // https://leetcode.com/u/Pujjaa07/
-              InkWell(
-                onTap: () =>
-                    _launchURL(context, 'https://leetcode.com/u/Pujjaa07/'),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const [
-                    Icon(
-                      Icons.link,
-                      color: Colors.white,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          blurRadius: 3,
-                          offset: Offset(1.5, 1.5),
-                        ),
-                      ],
-                    ),
-                    SizedBox(width: 8),
-                    Text(
-                      'leetcode.com/u/Pujjaa',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        shadows: [
-                          Shadow(
-                            color: Colors.black,
-                            blurRadius: 3,
-                            offset: Offset(1.5, 1.5),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              // https://www.hackerrank.com/profile/pujjaabaskaran21
-              InkWell(
-                onTap: () => _launchURL(
-                  context,
-                  'https://www.hackerrank.com/profile/pujjaabaskaran21',
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const [
-                    Icon(
-                      Icons.link,
-                      color: Colors.white,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          blurRadius: 3,
-                          offset: Offset(1.5, 1.5),
-                        ),
-                      ],
-                    ),
-                    SizedBox(width: 8),
-                    Text(
-                      'hackerrank.com/pujjaa',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-
-                        shadows: [
-                          Shadow(
-                            color: Colors.black,
-                            blurRadius: 3,
-                            offset: Offset(1.5, 1.5),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
         ],
       ),
     );
@@ -676,28 +713,9 @@ class _MainAppState extends State<MainApp> {
     );
   }
 
+  // https://drive.google.com/drive/folders/16Qw7KJkTVRS8dxknXXkenRLogBKDSkN3
   // ======= Certifications Dialog (fixed) =======
   void _showcertificationsDialog(BuildContext context) {
-    final List<Map<String, String>> certifications = [
-      {
-        'title': 'AI Intermediate and Advanced',
-        'desc': 'Issued by Microsoft Learn',
-      },
-      {'title': 'Golang Basics', 'desc': 'Issued by Simplilearn'},
-      {
-        'title': 'Virtual Internship in Data Analytics',
-        'desc': 'Deloitte Australia - Forage Virtual Internship',
-      },
-      {'title': 'Power BI Analytics', 'desc': 'Issued by TechTip24'},
-      {
-        'title': 'CCNA: Networking',
-        'desc': 'Issued by Cisco Networking Academy',
-      },
-      {
-        'title': 'Career Skills in Data Analytics',
-        'desc': 'Issued by LinkedIn Learning',
-      },
-    ];
     showDialog(
       context: context,
       builder: (context) {
@@ -710,25 +728,28 @@ class _MainAppState extends State<MainApp> {
             ),
           ),
           content: SizedBox(
-            width: MediaQuery.of(context).size.width * 0.7,
-            child: ListView.separated(
-              shrinkWrap: true,
-              separatorBuilder: (_, __) => const Divider(),
-              itemCount: certifications.length,
-              itemBuilder: (context, index) {
-                final cert = certifications[index];
-                return ListTile(
-                  leading: const Icon(
-                    Icons.verified,
-                    color: Color.fromARGB(255, 114, 73, 186),
+            width: MediaQuery.of(context).size.width * 0.15,
+            child: InkWell(
+              onTap: () => _launchURL(
+                context,
+                'https://drive.google.com/drive/folders/16Qw7KJkTVRS8dxknXXkenRLogBKDSkN3',
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: const [
+                  Icon(Icons.link, color: Colors.blueGrey),
+                  SizedBox(width: 8),
+                  Text(
+                    'View Certifications',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      // fontWeight: FontWeight.bold,
+                      // decoration: TextDecoration.underline,
+                    ),
                   ),
-                  title: Text(
-                    cert['title']!,
-                    style: const TextStyle(fontWeight: FontWeight.w600),
-                  ),
-                  subtitle: Text(cert['desc']!),
-                );
-              },
+                ],
+              ),
             ),
           ),
           actions: [
@@ -807,19 +828,80 @@ class _MainAppState extends State<MainApp> {
   }
 
   // ======= Experiences Dialog =======
+  // void _showexperiencesDialog(BuildContext context) {
+  //   final List<Map<String, String>> experiences = [
+  //     {
+  //       'title': 'AI Azure Intern',
+  //       'desc':
+  //           'Edunet Foundation\nMay 2025 - Jun 2025\nApplied NLP and advanced prompting with Microsoft Copilot & Gemini 2.5 Flash, achieving 85%+ accuracy.\nGained hands-on experience with Azure Fundamentals and AI services, including model deployment and API integration. ',
+  //     },
+  //     {
+  //       'title': 'Data Analyst Intern',
+  //       'desc':
+  //           'Oasis Infobyte\nJun 2024 - Jul 2024\nBuilt Excel dashboards processing 1,500+ rows using pivot tables, and VBA Macros, reducing manual reporting time by 30%.\nTransformed Kaggle datasets into insights using Power BI & Excel through data cleaning, analysis, and visualization. ',
+  //     },
+  //   ];
+  //   showDialog(
+  //     context: context,
+  //     builder: (context) {
+  //       return AlertDialog(
+  //         title: const Text(
+  //           'EXPERIENCES',
+  //           style: TextStyle(
+  //             fontWeight: FontWeight.bold,
+  //             fontFamily: '<Montserrat>',
+  //           ),
+  //         ),
+  //         content: SizedBox(
+  //           width: MediaQuery.of(context).size.width * 0.7,
+  //           child: ListView.separated(
+  //             shrinkWrap: true,
+  //             separatorBuilder: (_, __) => const Divider(),
+  //             itemCount: experiences.length,
+  //             itemBuilder: (context, index) {
+  //               final exp = experiences[index];
+  //               return ListTile(
+  //                 leading: const Icon(
+  //                   Icons.work_history,
+  //                   color: Colors.deepPurple,
+  //                 ),
+  //                 title: Text(
+  //                   exp['title']!,
+  //                   style: const TextStyle(fontWeight: FontWeight.w600),
+  //                 ),
+  //                 subtitle: Text(exp['desc']!),
+  //               );
+  //             },
+  //           ),
+  //         ),
+  //         actions: [
+  //           TextButton(
+  //             onPressed: () => Navigator.pop(context),
+  //             child: const Text('Close'),
+  //           ),
+  //         ],
+  //       );
+  //     },
+  //   );
+  // }
   void _showexperiencesDialog(BuildContext context) {
     final List<Map<String, String>> experiences = [
       {
         'title': 'AI Azure Intern',
+        'org': 'Edunet Foundation',
+        'year': 'May 2025 - Jun 2025',
         'desc':
-            'Edunet Foundation\nApplied NLP and advanced prompting with Microsoft Copilot & Gemini 2.5 Flash, achieving 85%+ accuracy.\nGained hands-on experience with Azure Fundamentals and AI services, including model deployment and API integration. ',
+            'Applied NLP and advanced prompting with Microsoft Copilot & Gemini 2.5 Flash, achieving 85%+ accuracy.\nGained hands-on experience with Azure Fundamentals and AI services, including model deployment and API integration.',
       },
       {
         'title': 'Data Analyst Intern',
+        'org': 'Oasis Infobyte',
+        'year': 'Jun 2024 - Jul 2024',
         'desc':
-            'Oasis Infobyte\nBuilt Excel dashboards processing 1,500+ rows using pivot tables, and VBA Macros, reducing manual reporting time by 30%.\nTransformed Kaggle datasets into insights using Power BI & Excel through data cleaning, analysis, and visualization. ',
+            'Built Excel dashboards processing 1,500+ rows using pivot tables, and VBA Macros, reducing manual reporting time by 30%.\nTransformed Kaggle datasets into insights using Power BI & Excel through data cleaning, analysis, and visualization.',
       },
     ];
+
     showDialog(
       context: context,
       builder: (context) {
@@ -828,7 +910,7 @@ class _MainAppState extends State<MainApp> {
             'EXPERIENCES',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontFamily: '<Montserrat>',
+              fontFamily: 'Montserrat',
             ),
           ),
           content: SizedBox(
@@ -848,7 +930,25 @@ class _MainAppState extends State<MainApp> {
                     exp['title']!,
                     style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
-                  subtitle: Text(exp['desc']!),
+                  subtitle: RichText(
+                    text: TextSpan(
+                      style: const TextStyle(color: Colors.black),
+                      children: [
+                        TextSpan(
+                          text: '${exp['org']}\n',
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        TextSpan(
+                          text: '${exp['year']}\n',
+                          style: const TextStyle(
+                            // fontStyle: FontStyle.italic,
+                            color: Colors.black,
+                          ),
+                        ),
+                        TextSpan(text: exp['desc']),
+                      ],
+                    ),
+                  ),
                 );
               },
             ),
@@ -870,24 +970,29 @@ class _MainAppState extends State<MainApp> {
       {
         'title': 'Brewly–Flutter App',
         'desc':
-            'Developing a cross-platform recipe app featuring 50+ beverages, achieving seamless UI/UX with Flutter & Dart.\nFirebase integration underway for real-time sync and secure authentication, enhancing scalability and user engagement. ',
+            'Developing a cross-platform recipe app featuring 50+ beverages, achieving seamless UI/UX with Flutter & Dart.\nFirebase integration underway for real-time sync and secure authentication, enhancing scalability and user engagement.',
+        'link': 'https://github.com/PUJJAA-VBA/Brewly',
       },
       {
         'title': 'Sentiment Analyzer CLI Tool',
         'desc':
             'Engineered a CLI-based sentiment analysis tool with NLTK VADER, achieving accurate classification across multiple datasets.\nIntegrated Gemini AI, cutting development time by 15%, and added CSV input and dynamic visualizations for insights reporting.',
+        'link': 'https://github.com/PUJJAA-VBA/Sentiment-Analyzer',
       },
       {
         'title': 'Online Task Manager',
         'desc':
-            'Led development of a web-based Online Task Manager with user authentication and distinct filters (Today, This Week, This Month).\nDirected a 10-member team as Team Lead, overseeing vision, task allocation, and frontend/backend integration for reliable delivery. ',
+            'Led development of a web-based Online Task Manager with user authentication and distinct filters (Today, This Week, This Month).\nDirected a 10-member team as Team Lead, overseeing vision, task allocation, and frontend/backend integration for reliable delivery.',
+        'link': 'https://github.com/PUJJAA-VBA/ONLINE-TASK-MANAGER',
       },
       {
         'title': 'Global Superstore Dashboard',
         'desc':
-            'Designed an interactive Power BI dashboard analyzing sales, profit, and customer trends across multiple regions.\nUsed Power Query Editor for ETL (Extract, Transform, Load), automating data preparation and improving analysis speed by 40%. ',
+            'Designed an interactive Power BI dashboard analyzing sales, profit, and customer trends across multiple regions.\nUsed Power Query Editor for ETL (Extract, Transform, Load), automating data preparation and improving analysis speed by 40%.',
+        'link': 'https://github.com/PUJJAA-VBA/GLOBAL-SUPERSTORE',
       },
     ];
+
     showDialog(
       context: context,
       builder: (context) {
@@ -896,7 +1001,7 @@ class _MainAppState extends State<MainApp> {
             'PROJECTS',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontFamily: '<Montserrat>',
+              fontFamily: 'Montserrat',
             ),
           ),
           content: SizedBox(
@@ -916,7 +1021,29 @@ class _MainAppState extends State<MainApp> {
                     proj['title']!,
                     style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
-                  subtitle: Text(proj['desc']!),
+                  subtitle: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(proj['desc']!),
+                      const SizedBox(height: 2),
+                      if (proj['link'] != null)
+                        TextButton.icon(
+                          onPressed: () => _launchURL(
+                            context,
+                            proj['link']!,
+                          ), // ✅ pass String
+                          icon: const Icon(Icons.link, color: Colors.blueGrey),
+                          label: const Text(
+                            "View Project",
+                            style: TextStyle(
+                              color: Colors.black,
+                              // fontWeight: FontWeight.bold,
+                              // decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
                 );
               },
             ),
@@ -944,17 +1071,17 @@ class _MainAppState extends State<MainApp> {
         //   style: TextStyle(fontWeight: FontWeight.bold),
         // ),
         const TextSpan(
-          text: 'Languages: ',
+          text: 'Languages:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(text: 'Python, C, C++, Java, Dart\n'),
         const TextSpan(
-          text: 'Libraries/Frameworks: ',
+          text: 'Libraries/Frameworks:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(text: 'NumPy, Pandas, Flutter\n'),
         const TextSpan(
-          text: 'AI/ML: ',
+          text: 'AI/ML:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(
@@ -962,12 +1089,12 @@ class _MainAppState extends State<MainApp> {
               'Generative AI Prompting (Gemini, Copilot, ChatGPT), NLP Basics\n',
         ),
         const TextSpan(
-          text: 'Database: ',
+          text: 'Database:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(text: 'SQL, MySQL\n'),
         const TextSpan(
-          text: 'Tools & Platforms: ',
+          text: 'Tools & Platforms:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(
@@ -984,17 +1111,17 @@ class _MainAppState extends State<MainApp> {
         //   style: TextStyle(fontWeight: FontWeight.bold),
         // ),
         const TextSpan(
-          text: 'Languages: ',
+          text: 'Languages:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(text: 'Python, C, C++, Java, Dart\n'),
         const TextSpan(
-          text: 'Libraries/Frameworks: ',
+          text: 'Libraries/Frameworks:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(text: 'NumPy, Pandas, Flutter\n'),
         const TextSpan(
-          text: 'AI/ML: ',
+          text: 'AI/ML:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(
@@ -1002,12 +1129,12 @@ class _MainAppState extends State<MainApp> {
               'Generative AI Prompting (Gemini, Copilot, ChatGPT), NLP Basics\n',
         ),
         const TextSpan(
-          text: 'Database: ',
+          text: 'Database:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(text: 'SQL, MySQL\n'),
         const TextSpan(
-          text: 'Tools & Platforms: ',
+          text: 'Tools & Platforms:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         const TextSpan(
