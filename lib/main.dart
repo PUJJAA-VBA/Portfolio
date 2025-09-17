@@ -212,26 +212,10 @@ class _MainAppState extends State<MainApp> {
                                                     context,
                                                     'https://leetcode.com/u/Pujjaa07/',
                                                   ),
-                                                  child: Flexible(
-                                                    flex: 100,
-                                                    child: Container(
-                                                      decoration: BoxDecoration(
-                                                        boxShadow: [
-                                                          BoxShadow(
-                                                            color: Colors.white,
-                                                          ),
-                                                        ],
-                                                        borderRadius:
-                                                            BorderRadius.circular(
-                                                              10,
-                                                            ),
-                                                      ),
-                                                      child: Image.asset(
-                                                        'assets/image/leetcode_image.png',
-                                                        width: 28,
-                                                        height: 28,
-                                                      ),
-                                                    ),
+                                                  child: Image.asset(
+                                                    'assets/image/leetcode_image.png',
+                                                    width: 26.8,
+                                                    height: 26.8,
                                                   ),
                                                 ),
                                                 SizedBox(width: 15),
