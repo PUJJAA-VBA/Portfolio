@@ -107,7 +107,6 @@ class _MainAppState extends State<MainApp> {
                                     ),
                                     decoration: BoxDecoration(
                                       color: Colors.transparent,
-
                                       borderRadius: BorderRadius.circular(15),
                                     ),
                                     margin: const EdgeInsets.only(
@@ -119,148 +118,109 @@ class _MainAppState extends State<MainApp> {
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
                                       children: [
-                                        // ✅ Wrap makes the links auto-break into new lines on smaller screens
-                                        Wrap(
-                                          alignment: WrapAlignment.center,
-                                          spacing: 20,
-                                          runSpacing: 10,
-                                          children: [
-                                            Row(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                InkWell(
-                                                  onTap: () => _launchURL(
-                                                    context,
-                                                    'mailto:pujjaabaskaran2005@gmail.com',
-                                                  ),
-                                                  child: Flexible(
-                                                    flex: 100,
-                                                    child: Icon(
-                                                      Icons.email_outlined,
-                                                      color: Colors.white,
-                                                      size: 35,
-                                                      shadows: [
-                                                        Shadow(
-                                                          color: Colors.black,
-                                                          blurRadius: 3,
-                                                          offset: Offset(
-                                                            1.5,
-                                                            1.5,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(width: 15),
-                                                InkWell(
-                                                  onTap: () => _launchURL(
-                                                    context,
-                                                    'https://www.linkedin.com/in/pujjaa-vba/',
-                                                  ),
-                                                  child: Flexible(
-                                                    flex: 100,
-                                                    child: FaIcon(
-                                                      FontAwesomeIcons.linkedin,
-                                                      color: Colors.white,
-                                                      size: 28.6,
-                                                      shadows: [
-                                                        Shadow(
-                                                          color: Colors.black,
-                                                          blurRadius: 3,
-                                                          offset: Offset(
-                                                            1.5,
-                                                            1.5,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(width: 15),
-                                                InkWell(
-                                                  onTap: () => _launchURL(
-                                                    context,
-                                                    'https://github.com/PUJJAA-VBA',
-                                                  ),
-                                                  child: Flexible(
-                                                    flex: 100,
-                                                    child: FaIcon(
-                                                      FontAwesomeIcons.github,
-                                                      color: Colors.white,
-                                                      size: 28.6,
-                                                      shadows: [
-                                                        Shadow(
-                                                          color: Colors.black,
-                                                          blurRadius: 3,
-                                                          offset: Offset(
-                                                            1.5,
-                                                            1.5,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(width: 15),
+                                        // Email
+                                        InkWell(
+                                          onTap: () => _launchURL(
+                                            context,
+                                            'mailto:pujjaabaskaran2005@gmail.com',
+                                          ),
+                                          child: Icon(
+                                            Icons.email_outlined,
+                                            color: Colors.white,
+                                            size: 35,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.black,
+                                                blurRadius: 3,
+                                                offset: Offset(1.5, 1.5),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        const SizedBox(width: 20),
 
-                                                // InkWell(
-                                                //   onTap: () => _launchURL(
-                                                //     context,
-                                                //     'https://leetcode.com/u/Pujjaa07/',
-                                                //   ),
-                                                //   child: Image.asset(
-                                                //     'assets/image/leetcode_image.png',
-                                                //     width: 26.8,
-                                                //     height: 26.8,
-                                                //     fit: BoxFit.contain,
-                                                //     errorBuilder:
-                                                //         (
-                                                //           context,
-                                                //           error,
-                                                //           stackTrace,
-                                                //         ) {
-                                                //           return Icon(
-                                                //             Icons.error,
-                                                //             color: Colors.red,
-                                                //             size: 28,
-                                                //           );
-                                                //         },
-                                                //   ),
-                                                // ),
-                                                // SizedBox(width: 15),
-                                                InkWell(
-                                                  onTap: () => _launchURL(
-                                                    context,
-                                                    'https://www.hackerrank.com/profile/pujjaabaskaran21',
-                                                  ),
-                                                  child: Flexible(
-                                                    flex: 100,
-                                                    child: FaIcon(
-                                                      FontAwesomeIcons
-                                                          .hackerrank,
-                                                      color: Colors.white,
+                                        // LinkedIn
+                                        InkWell(
+                                          onTap: () => _launchURL(
+                                            context,
+                                            'https://www.linkedin.com/in/pujjaa-vba/',
+                                          ),
+                                          child: FaIcon(
+                                            FontAwesomeIcons.linkedin,
+                                            color: Colors.white,
+                                            size: 28.6,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.black,
+                                                blurRadius: 3,
+                                                offset: Offset(1.5, 1.5),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        const SizedBox(width: 20),
 
-                                                      size: 28.6,
-                                                      shadows: [
-                                                        Shadow(
-                                                          color: Colors.black,
-                                                          blurRadius: 3,
-                                                          offset: Offset(
-                                                            1.5,
-                                                            1.5,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ],
+                                        // GitHub
+                                        InkWell(
+                                          onTap: () => _launchURL(
+                                            context,
+                                            'https://github.com/PUJJAA-VBA',
+                                          ),
+                                          child: FaIcon(
+                                            FontAwesomeIcons.github,
+                                            color: Colors.white,
+                                            size: 28.6,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.black,
+                                                blurRadius: 3,
+                                                offset: Offset(1.5, 1.5),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        const SizedBox(width: 20),
+                                        InkWell(
+                                          onTap: () => _launchURL(
+                                            context,
+                                            'https://leetcode.com/u/Pujjaa07/',
+                                          ),
+                                          child: Image.asset(
+                                            "assets/image/leetcode_image.png",
+                                            width: 26.8,
+                                            height: 26.8,
+                                            fit: BoxFit.contain,
+                                            errorBuilder:
+                                                (context, error, stackTrace) {
+                                                  return Icon(
+                                                    Icons.error,
+                                                    color: Colors.red,
+                                                    size: 28,
+                                                  );
+                                                },
+                                          ),
+                                        ),
+
+                                        const SizedBox(width: 20),
+                                        // HackerRank
+                                        InkWell(
+                                          onTap: () => _launchURL(
+                                            context,
+                                            'https://www.hackerrank.com/profile/pujjaabaskaran21',
+                                          ),
+                                          child: FaIcon(
+                                            FontAwesomeIcons.hackerrank,
+                                            color: Colors.white,
+                                            size: 28.6,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.black,
+                                                blurRadius: 3,
+                                                offset: Offset(1.5, 1.5),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ],
                                     ),
