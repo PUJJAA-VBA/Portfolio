@@ -50,50 +50,41 @@ class _MainAppState extends State<MainApp> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Flexible(
-                                    flex: 100,
-                                    child: Text(
-                                      'HELLO! ',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 45,
-                                        fontWeight: FontWeight.w800,
-                                        fontFamily: 'SpecialElite',
-                                        letterSpacing: 4.5,
-                                        shadows: [
-                                          Shadow(
-                                            blurRadius: 8.0,
-                                            color: Colors.black.withOpacity(
-                                              0.7,
-                                            ),
-                                            offset: const Offset(2.0, 2.0),
-                                          ),
-                                        ],
-                                      ),
+                                  Text(
+                                    'HELLO! ',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 45,
+                                      fontWeight: FontWeight.w800,
+                                      fontFamily: 'SpecialElite',
+                                      letterSpacing: 4.5,
+                                      shadows: [
+                                        Shadow(
+                                          blurRadius: 8.0,
+                                          color: Colors.black.withOpacity(0.7),
+                                          offset: const Offset(2.0, 2.0),
+                                        ),
+                                      ],
                                     ),
                                   ),
+
                                   // const SizedBox(height: 5),
-                                  Flexible(
-                                    flex: 100,
-                                    child: Text(
-                                      'I\'m PUJJAA VBA',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 40,
-                                        fontWeight: FontWeight.w700,
-                                        fontFamily: 'SpecialElite',
-                                        // fontFamily: 'FontdinerSwanky',
-                                        letterSpacing: 1.5,
-                                        shadows: [
-                                          Shadow(
-                                            blurRadius: 8.0,
-                                            color: Colors.black.withOpacity(
-                                              0.7,
-                                            ),
-                                            offset: const Offset(2.0, 2.0),
-                                          ),
-                                        ],
-                                      ),
+                                  Text(
+                                    'I\'m PUJJAA VBA',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 40,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: 'SpecialElite',
+                                      // fontFamily: 'FontdinerSwanky',
+                                      letterSpacing: 1.5,
+                                      shadows: [
+                                        Shadow(
+                                          blurRadius: 8.0,
+                                          color: Colors.black.withOpacity(0.7),
+                                          offset: const Offset(2.0, 2.0),
+                                        ),
+                                      ],
                                     ),
                                   ),
 
@@ -678,10 +669,8 @@ class _MainAppState extends State<MainApp> {
               itemBuilder: (context, index) {
                 final skill = softSkills[index];
                 return ListTile(
-                  leading: Flexible(
-                    flex: 100,
-                    child: Icon(Icons.stars_sharp, color: Colors.deepPurple),
-                  ),
+                  leading: Icon(Icons.stars_sharp, color: Colors.deepPurple),
+
                   title: Text(
                     skill['title']!,
                     style: const TextStyle(fontWeight: FontWeight.w600),
