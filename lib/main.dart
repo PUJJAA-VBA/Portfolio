@@ -289,24 +289,21 @@ class _MainAppState extends State<MainApp> {
                                 ],
                               ),
                               SizedBox(width: 8),
-                              Flexible(
-                                flex: 1000,
-                                child: Text(
-                                  'DOWNLOAD RESUME',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: '<Montserrat>',
-                                    // letterSpacing: 2.0,
-                                    shadows: [
-                                      Shadow(
-                                        color: Colors.black,
-                                        blurRadius: 3,
-                                        offset: Offset(1.5, 1.5),
-                                      ),
-                                    ],
-                                  ),
+                              Text(
+                                'DOWNLOAD RESUME',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: '<Montserrat>',
+                                  // letterSpacing: 2.0,
+                                  shadows: [
+                                    Shadow(
+                                      color: Colors.black,
+                                      blurRadius: 3,
+                                      offset: Offset(1.5, 1.5),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
@@ -349,24 +346,21 @@ class _MainAppState extends State<MainApp> {
                 ],
               ),
               SizedBox(width: 10),
-              Flexible(
-                flex: 100,
-                child: Text(
-                  'ABOUT ME',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 32,
-                    fontWeight: FontWeight.w800,
-                    letterSpacing: 2,
-                    fontFamily: 'SpecialElite',
-                    shadows: [
-                      Shadow(
-                        color: Colors.black,
-                        blurRadius: 3,
-                        offset: Offset(1.5, 1.5),
-                      ),
-                    ],
-                  ),
+              Text(
+                'ABOUT ME',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 32,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 2,
+                  fontFamily: 'SpecialElite',
+                  shadows: [
+                    Shadow(
+                      color: Colors.black,
+                      blurRadius: 3,
+                      offset: Offset(1.5, 1.5),
+                    ),
+                  ],
                 ),
               ),
             ],
@@ -394,47 +388,45 @@ class _MainAppState extends State<MainApp> {
               ],
               borderRadius: BorderRadius.circular(15),
             ),
-            child: Flexible(
-              flex: 100,
-              child: Column(
-                children: const [
-                  Text(
-                    '🚀 Aspiring Software Developer | Data + AI Enthusiasist | Flutter + Power BI',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          blurRadius: 3,
-                          offset: Offset(1.5, 1.5),
-                        ),
-                      ],
-                    ),
+            child: Column(
+              children: const [
+                Text(
+                  '🚀 Aspiring Software Developer | Data + AI Enthusiasist | Flutter + Power BI',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black,
+                        blurRadius: 3,
+                        offset: Offset(1.5, 1.5),
+                      ),
+                    ],
                   ),
-                  SizedBox(height: 20),
-                  Text(
-                    'Motivated Computer Science Engineering student with a strong focus on Software Development, Data Analytics, and Mobile Application Development. Proficient in Python, Java, Flutter, Power BI, and Tableau, with hands-on experience delivering projects that integrate Problem-Solving and practical Applications. Demonstrates Leadership and effective Communication through collaborative Team projects and technical Workshops. Actively exploring Cloud technologies and advanced Flutter development, while continuously enhancing DSA, system design, and scalable software architecture skills.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 19,
-                      height: 1.6,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black,
-                          blurRadius: 3,
-                          offset: Offset(1.5, 1.5),
-                        ),
-                      ],
-                    ),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  'Motivated Computer Science Engineering student with a strong focus on Software Development, Data Analytics, and Mobile Application Development. Proficient in Python, Java, Flutter, Power BI, and Tableau, with hands-on experience delivering projects that integrate Problem-Solving and practical Applications. Demonstrates Leadership and effective Communication through collaborative Team projects and technical Workshops. Actively exploring Cloud technologies and advanced Flutter development, while continuously enhancing DSA, system design, and scalable software architecture skills.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 19,
+                    height: 1.6,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black,
+                        blurRadius: 3,
+                        offset: Offset(1.5, 1.5),
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
+
           const SizedBox(height: 32),
         ],
       ),
@@ -494,25 +486,22 @@ class _MainAppState extends State<MainApp> {
               ],
             ),
             const SizedBox(height: 12),
-            Flexible(
-              flex: 1000,
-              child: Text(
-                title,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800,
-                  // letterSpacing: 2.0,
-                  fontFamily: '<Montserrat>',
-                  shadows: [
-                    Shadow(
-                      color: Colors.black,
-                      blurRadius: 3,
-                      offset: Offset(1.5, 1.5),
-                    ),
-                  ],
-                ),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.w800,
+                // letterSpacing: 2.0,
+                fontFamily: '<Montserrat>',
+                shadows: [
+                  Shadow(
+                    color: Colors.black,
+                    blurRadius: 3,
+                    offset: Offset(1.5, 1.5),
+                  ),
+                ],
               ),
             ),
           ],
@@ -616,24 +605,21 @@ class _MainAppState extends State<MainApp> {
                 context,
                 'https://drive.google.com/drive/folders/16Qw7KJkTVRS8dxknXXkenRLogBKDSkN3',
               ),
-              child: Flexible(
-                flex: 1000,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const [
-                    Icon(Icons.link, color: Colors.blueGrey),
-                    SizedBox(width: 8),
-                    Text(
-                      'View Certifications',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                        // fontWeight: FontWeight.bold,
-                        // decoration: TextDecoration.underline,
-                      ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: const [
+                  Icon(Icons.link, color: Colors.blueGrey),
+                  SizedBox(width: 8),
+                  Text(
+                    'View Certifications',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      // fontWeight: FontWeight.bold,
+                      // decoration: TextDecoration.underline,
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -683,31 +669,29 @@ class _MainAppState extends State<MainApp> {
               fontFamily: '<Montserrat>',
             ),
           ),
-          content: Flexible(
-            flex: 1000,
-            child: SizedBox(
-              width: MediaQuery.of(context).size.width * 0.7,
-              child: ListView.separated(
-                shrinkWrap: true,
-                separatorBuilder: (_, __) => const Divider(),
-                itemCount: softSkills.length,
-                itemBuilder: (context, index) {
-                  final skill = softSkills[index];
-                  return ListTile(
-                    leading: Flexible(
-                      flex: 100,
-                      child: Icon(Icons.stars_sharp, color: Colors.deepPurple),
-                    ),
-                    title: Text(
-                      skill['title']!,
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    subtitle: Text(skill['desc']!),
-                  );
-                },
-              ),
+          content: SizedBox(
+            width: MediaQuery.of(context).size.width * 0.7,
+            child: ListView.separated(
+              shrinkWrap: true,
+              separatorBuilder: (_, __) => const Divider(),
+              itemCount: softSkills.length,
+              itemBuilder: (context, index) {
+                final skill = softSkills[index];
+                return ListTile(
+                  leading: Flexible(
+                    flex: 100,
+                    child: Icon(Icons.stars_sharp, color: Colors.deepPurple),
+                  ),
+                  title: Text(
+                    skill['title']!,
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  subtitle: Text(skill['desc']!),
+                );
+              },
             ),
           ),
+
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
@@ -749,49 +733,47 @@ class _MainAppState extends State<MainApp> {
               fontFamily: 'Montserrat',
             ),
           ),
-          content: Flexible(
-            flex: 1000,
-            child: SizedBox(
-              width: MediaQuery.of(context).size.width * 0.7,
-              child: ListView.separated(
-                shrinkWrap: true,
-                separatorBuilder: (_, __) => const Divider(),
-                itemCount: experiences.length,
-                itemBuilder: (context, index) {
-                  final exp = experiences[index];
-                  return ListTile(
-                    leading: const Icon(
-                      Icons.work_history,
-                      color: Colors.deepPurple,
-                    ),
-                    title: Text(
-                      exp['title']!,
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    subtitle: RichText(
-                      text: TextSpan(
-                        style: const TextStyle(color: Colors.black),
-                        children: [
-                          TextSpan(
-                            text: '${exp['org']}\n',
-                            style: const TextStyle(fontWeight: FontWeight.bold),
+          content: SizedBox(
+            width: MediaQuery.of(context).size.width * 0.7,
+            child: ListView.separated(
+              shrinkWrap: true,
+              separatorBuilder: (_, __) => const Divider(),
+              itemCount: experiences.length,
+              itemBuilder: (context, index) {
+                final exp = experiences[index];
+                return ListTile(
+                  leading: const Icon(
+                    Icons.work_history,
+                    color: Colors.deepPurple,
+                  ),
+                  title: Text(
+                    exp['title']!,
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  subtitle: RichText(
+                    text: TextSpan(
+                      style: const TextStyle(color: Colors.black),
+                      children: [
+                        TextSpan(
+                          text: '${exp['org']}\n',
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        TextSpan(
+                          text: '${exp['year']}\n',
+                          style: const TextStyle(
+                            // fontStyle: FontStyle.italic,
+                            color: Colors.black,
                           ),
-                          TextSpan(
-                            text: '${exp['year']}\n',
-                            style: const TextStyle(
-                              // fontStyle: FontStyle.italic,
-                              color: Colors.black,
-                            ),
-                          ),
-                          TextSpan(text: exp['desc']),
-                        ],
-                      ),
+                        ),
+                        TextSpan(text: exp['desc']),
+                      ],
                     ),
-                  );
-                },
-              ),
+                  ),
+                );
+              },
             ),
           ),
+
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
@@ -843,56 +825,51 @@ class _MainAppState extends State<MainApp> {
               fontFamily: 'Montserrat',
             ),
           ),
-          content: Flexible(
-            flex: 1000,
-            child: SizedBox(
-              width: MediaQuery.of(context).size.width * 0.7,
-              child: ListView.separated(
-                shrinkWrap: true,
-                separatorBuilder: (_, __) => const Divider(),
-                itemCount: projects.length,
-                itemBuilder: (context, index) {
-                  final proj = projects[index];
-                  return ListTile(
-                    leading: const Icon(
-                      Icons.folder_copy_rounded,
-                      color: Colors.deepPurple,
-                    ),
-                    title: Text(
-                      proj['title']!,
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    subtitle: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(proj['desc']!),
-                        const SizedBox(height: 2),
-                        if (proj['link'] != null)
-                          TextButton.icon(
-                            onPressed: () => _launchURL(
-                              context,
-                              proj['link']!,
-                            ), // ✅ pass String
-                            icon: const Icon(
-                              Icons.link,
-                              color: Colors.blueGrey,
-                            ),
-                            label: const Text(
-                              "View Project",
-                              style: TextStyle(
-                                color: Colors.black,
-                                // fontWeight: FontWeight.bold,
-                                // decoration: TextDecoration.underline,
-                              ),
+          content: SizedBox(
+            width: MediaQuery.of(context).size.width * 0.7,
+            child: ListView.separated(
+              shrinkWrap: true,
+              separatorBuilder: (_, __) => const Divider(),
+              itemCount: projects.length,
+              itemBuilder: (context, index) {
+                final proj = projects[index];
+                return ListTile(
+                  leading: const Icon(
+                    Icons.folder_copy_rounded,
+                    color: Colors.deepPurple,
+                  ),
+                  title: Text(
+                    proj['title']!,
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  subtitle: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(proj['desc']!),
+                      const SizedBox(height: 2),
+                      if (proj['link'] != null)
+                        TextButton.icon(
+                          onPressed: () => _launchURL(
+                            context,
+                            proj['link']!,
+                          ), // ✅ pass String
+                          icon: const Icon(Icons.link, color: Colors.blueGrey),
+                          label: const Text(
+                            "View Project",
+                            style: TextStyle(
+                              color: Colors.black,
+                              // fontWeight: FontWeight.bold,
+                              // decoration: TextDecoration.underline,
                             ),
                           ),
-                      ],
-                    ),
-                  );
-                },
-              ),
+                        ),
+                    ],
+                  ),
+                );
+              },
             ),
           ),
+
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
@@ -1002,17 +979,15 @@ class _MainAppState extends State<MainApp> {
               Text(skill),
             ],
           ),
-          content: Flexible(
-            flex: 1000,
-            child: SingleChildScrollView(
-              child: RichText(
-                text: TextSpan(
-                  style: const TextStyle(color: Colors.black, fontSize: 14),
-                  children: contentSpans,
-                ),
+          content: SingleChildScrollView(
+            child: RichText(
+              text: TextSpan(
+                style: const TextStyle(color: Colors.black, fontSize: 14),
+                children: contentSpans,
               ),
             ),
           ),
+
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
