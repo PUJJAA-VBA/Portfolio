@@ -134,7 +134,7 @@ class _MainAppState extends State<MainApp> {
                                                 InkWell(
                                                   onTap: () => _launchURL(
                                                     context,
-                                                    'mailto: pujjaabaskaran2005@gmail.com',
+                                                    'mailto:pujjaabaskaran2005@gmail.com',
                                                   ),
                                                   child: Flexible(
                                                     flex: 100,
@@ -216,6 +216,7 @@ class _MainAppState extends State<MainApp> {
                                                     'assets/image/leetcode_image.png',
                                                     width: 26.8,
                                                     height: 26.8,
+                                                    fit: BoxFit.contain,
                                                   ),
                                                 ),
                                                 SizedBox(width: 15),
@@ -1021,34 +1022,31 @@ class _MainAppState extends State<MainApp> {
     showDialog(
       context: context,
       builder: (context) {
-        return Flexible(
-          flex: 1000,
-          child: AlertDialog(
-            title: Row(
-              children: [
-                Icon(icon, color: color),
-                const SizedBox(width: 12),
-                Text(skill),
-              ],
-            ),
-            content: Flexible(
-              flex: 1000,
-              child: SingleChildScrollView(
-                child: RichText(
-                  text: TextSpan(
-                    style: const TextStyle(color: Colors.black, fontSize: 14),
-                    children: contentSpans,
-                  ),
+        return AlertDialog(
+          title: Row(
+            children: [
+              Icon(icon, color: color),
+              const SizedBox(width: 12),
+              Text(skill),
+            ],
+          ),
+          content: Flexible(
+            flex: 1000,
+            child: SingleChildScrollView(
+              child: RichText(
+                text: TextSpan(
+                  style: const TextStyle(color: Colors.black, fontSize: 14),
+                  children: contentSpans,
                 ),
               ),
             ),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(context),
-                child: const Text('Close'),
-              ),
-            ],
           ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Close'),
+            ),
+          ],
         );
       },
     );
