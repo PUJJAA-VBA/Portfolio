@@ -217,6 +217,18 @@ class _MainAppState extends State<MainApp> {
                                                     width: 26.8,
                                                     height: 26.8,
                                                     fit: BoxFit.contain,
+                                                    errorBuilder:
+                                                        (
+                                                          context,
+                                                          error,
+                                                          stackTrace,
+                                                        ) {
+                                                          return Icon(
+                                                            Icons.error,
+                                                            color: Colors.red,
+                                                            size: 28,
+                                                          );
+                                                        },
                                                   ),
                                                 ),
                                                 SizedBox(width: 15),
@@ -276,7 +288,7 @@ class _MainAppState extends State<MainApp> {
                           gradient: LinearGradient(
                             colors: [
                               Colors.black,
-                              const Color.fromARGB(255, 113, 48, 192),
+                              const Color.fromARGB(255, 69, 32, 114),
                               Colors.black,
                             ],
                             begin: Alignment.topLeft,
@@ -407,7 +419,7 @@ class _MainAppState extends State<MainApp> {
               gradient: LinearGradient(
                 colors: [
                   Colors.black,
-                  const Color.fromARGB(255, 113, 48, 192),
+                  const Color.fromARGB(255, 69, 32, 114),
                   Colors.black,
                 ],
                 begin: Alignment.topLeft,
@@ -491,7 +503,7 @@ class _MainAppState extends State<MainApp> {
           gradient: LinearGradient(
             colors: [
               Colors.black,
-              const Color.fromARGB(255, 113, 48, 192),
+              const Color.fromARGB(255, 69, 32, 114),
               Colors.black,
             ],
             begin: Alignment.topLeft,
