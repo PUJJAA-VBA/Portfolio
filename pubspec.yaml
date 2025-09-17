@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^6.2.6
+  font_awesome_flutter: ^10.7.0
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +23,7 @@ flutter:
   assets:
     - assets/image/bg_image.jpg
     - assets/image/bg_image1.png
+    - assets/image/leetcode_image.png
 
     
 

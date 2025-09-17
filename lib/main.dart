@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart'; // Required for opening links
 
 void main() {
@@ -43,55 +44,226 @@ class _MainAppState extends State<MainApp> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            // Expanded(
-                            //   flex: 2,
-                            //   child: Center(
-                            //     child: Image.asset(
-                            //       'assets/image/bg_image1.png',
-                            //       height: 800,
-                            //       width: 800,
-                            //       fit: BoxFit.contain,
-                            //     ),
-                            //   ),
-                            // ),
                             Expanded(
                               flex: 3,
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Text(
-                                    'HELLO! ',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 45,
-                                      fontWeight: FontWeight.w800,
-                                      fontFamily: 'SpecialElite',
-                                      letterSpacing: 4.5,
-                                      shadows: [
-                                        Shadow(
-                                          blurRadius: 8.0,
-                                          color: Colors.black.withOpacity(0.7),
-                                          offset: const Offset(2.0, 2.0),
-                                        ),
-                                      ],
+                                  Flexible(
+                                    flex: 100,
+                                    child: Text(
+                                      'HELLO! ',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 45,
+                                        fontWeight: FontWeight.w800,
+                                        fontFamily: 'SpecialElite',
+                                        letterSpacing: 4.5,
+                                        shadows: [
+                                          Shadow(
+                                            blurRadius: 8.0,
+                                            color: Colors.black.withOpacity(
+                                              0.7,
+                                            ),
+                                            offset: const Offset(2.0, 2.0),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
-                                  const SizedBox(height: 8),
-                                  Text(
-                                    'I\'m Pujjaa VBA',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 40,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: 'SpecialElite',
-                                      // fontFamily: 'FontdinerSwanky',
-                                      letterSpacing: 1.5,
-                                      shadows: [
-                                        Shadow(
-                                          blurRadius: 8.0,
-                                          color: Colors.black.withOpacity(0.7),
-                                          offset: const Offset(2.0, 2.0),
+                                  // const SizedBox(height: 5),
+                                  Flexible(
+                                    flex: 100,
+                                    child: Text(
+                                      'I\'m PUJJAA VBA',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 40,
+                                        fontWeight: FontWeight.w700,
+                                        fontFamily: 'SpecialElite',
+                                        // fontFamily: 'FontdinerSwanky',
+                                        letterSpacing: 1.5,
+                                        shadows: [
+                                          Shadow(
+                                            blurRadius: 8.0,
+                                            color: Colors.black.withOpacity(
+                                              0.7,
+                                            ),
+                                            offset: const Offset(2.0, 2.0),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+
+                                  // const SizedBox(height: 5),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: MediaQuery.of(context).size.width,
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 16,
+                                      horizontal: 20,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      color: Colors.transparent,
+
+                                      borderRadius: BorderRadius.circular(15),
+                                    ),
+                                    margin: const EdgeInsets.only(
+                                      left: 50,
+                                      right: 50,
+                                      bottom: 20,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        // ✅ Wrap makes the links auto-break into new lines on smaller screens
+                                        Wrap(
+                                          alignment: WrapAlignment.center,
+                                          spacing: 20,
+                                          runSpacing: 10,
+                                          children: [
+                                            Row(
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: [
+                                                InkWell(
+                                                  onTap: () => _launchURL(
+                                                    context,
+                                                    'mailto: pujjaabaskaran2005@gmail.com',
+                                                  ),
+                                                  child: Flexible(
+                                                    flex: 100,
+                                                    child: Icon(
+                                                      Icons.email_outlined,
+                                                      color: Colors.white,
+                                                      size: 35,
+                                                      shadows: [
+                                                        Shadow(
+                                                          color: Colors.black,
+                                                          blurRadius: 3,
+                                                          offset: Offset(
+                                                            1.5,
+                                                            1.5,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                                SizedBox(width: 15),
+                                                InkWell(
+                                                  onTap: () => _launchURL(
+                                                    context,
+                                                    'https://www.linkedin.com/in/pujjaa-vba/',
+                                                  ),
+                                                  child: Flexible(
+                                                    flex: 100,
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.linkedin,
+                                                      color: Colors.white,
+                                                      size: 28.6,
+                                                      shadows: [
+                                                        Shadow(
+                                                          color: Colors.black,
+                                                          blurRadius: 3,
+                                                          offset: Offset(
+                                                            1.5,
+                                                            1.5,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                                SizedBox(width: 15),
+                                                InkWell(
+                                                  onTap: () => _launchURL(
+                                                    context,
+                                                    'https://github.com/PUJJAA-VBA',
+                                                  ),
+                                                  child: Flexible(
+                                                    flex: 100,
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.github,
+                                                      color: Colors.white,
+                                                      size: 28.6,
+                                                      shadows: [
+                                                        Shadow(
+                                                          color: Colors.black,
+                                                          blurRadius: 3,
+                                                          offset: Offset(
+                                                            1.5,
+                                                            1.5,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                                SizedBox(width: 15),
+
+                                                InkWell(
+                                                  onTap: () => _launchURL(
+                                                    context,
+                                                    'https://leetcode.com/u/Pujjaa07/',
+                                                  ),
+                                                  child: Flexible(
+                                                    flex: 100,
+                                                    child: Container(
+                                                      decoration: BoxDecoration(
+                                                        boxShadow: [
+                                                          BoxShadow(
+                                                            color: Colors.white,
+                                                          ),
+                                                        ],
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                              10,
+                                                            ),
+                                                      ),
+                                                      child: Image.asset(
+                                                        'assets/image/leetcode_image.png',
+                                                        width: 28,
+                                                        height: 28,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                                SizedBox(width: 15),
+                                                InkWell(
+                                                  onTap: () => _launchURL(
+                                                    context,
+                                                    'https://www.hackerrank.com/profile/pujjaabaskaran21',
+                                                  ),
+                                                  child: Flexible(
+                                                    flex: 100,
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons
+                                                          .hackerrank,
+                                                      color: Colors.white,
+
+                                                      size: 28.6,
+                                                      shadows: [
+                                                        Shadow(
+                                                          color: Colors.black,
+                                                          blurRadius: 3,
+                                                          offset: Offset(
+                                                            1.5,
+                                                            1.5,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
                                         ),
                                       ],
                                     ),
@@ -119,12 +291,19 @@ class _MainAppState extends State<MainApp> {
                           gradient: LinearGradient(
                             colors: [
                               Colors.black,
-                              Colors.blueGrey,
+                              const Color.fromARGB(255, 113, 48, 192),
                               Colors.black,
                             ],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
                           ),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.white.withOpacity(0.3),
+                              blurRadius: 12,
+                              offset: const Offset(0, 6),
+                            ),
+                          ],
                           borderRadius: BorderRadius.circular(15),
                         ),
                         margin: EdgeInsets.only(
@@ -153,76 +332,16 @@ class _MainAppState extends State<MainApp> {
                                 ],
                               ),
                               SizedBox(width: 8),
-                              Text(
-                                'DOWNLOAD RESUME',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: '<Montserrat>',
-                                  // letterSpacing: 2.0,
-                                  shadows: [
-                                    Shadow(
-                                      color: Colors.black,
-                                      blurRadius: 3,
-                                      offset: Offset(1.5, 1.5),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      // const SizedBox(height: 10),
-                      Container(
-                        alignment: Alignment.center,
-                        width: MediaQuery.of(context).size.width,
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 16,
-                          horizontal: 20,
-                        ),
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            colors: [
-                              Colors.black,
-                              Colors.blueGrey,
-                              Colors.black,
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        margin: const EdgeInsets.only(
-                          left: 50,
-                          right: 50,
-                          bottom: 20,
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Icon(
-                                  Icons.phone_in_talk_sharp,
-                                  color: Colors.white,
-                                  shadows: [
-                                    Shadow(
-                                      color: Colors.black,
-                                      blurRadius: 3,
-                                      offset: Offset(1.5, 1.5),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(width: 8),
-                                Text(
-                                  'CONTACT ME',
+                              Flexible(
+                                flex: 1000,
+                                child: Text(
+                                  'DOWNLOAD RESUME',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
+                                    fontFamily: '<Montserrat>',
+                                    // letterSpacing: 2.0,
                                     shadows: [
                                       Shadow(
                                         color: Colors.black,
@@ -232,205 +351,12 @@ class _MainAppState extends State<MainApp> {
                                     ],
                                   ),
                                 ),
-                              ],
-                            ),
-                            const SizedBox(height: 8),
-
-                            // ✅ Wrap makes the links auto-break into new lines on smaller screens
-                            Wrap(
-                              alignment: WrapAlignment.center,
-                              spacing: 20,
-                              runSpacing: 10,
-                              children: [
-                                const Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Icon(
-                                      Icons.email_outlined,
-                                      color: Colors.white,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.black,
-                                          blurRadius: 3,
-                                          offset: Offset(1.5, 1.5),
-                                        ),
-                                      ],
-                                    ),
-                                    SizedBox(width: 8),
-                                    Text(
-                                      'pujjaabaskaran2005@gmail.com',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold,
-                                        shadows: [
-                                          Shadow(
-                                            color: Colors.black,
-                                            blurRadius: 3,
-                                            offset: Offset(1.5, 1.5),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                InkWell(
-                                  onTap: () => _launchURL(
-                                    context,
-                                    'https://github.com/PUJJAA-VBA',
-                                  ),
-                                  child: const Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Icon(
-                                        Icons.code,
-                                        color: Colors.white,
-                                        shadows: [
-                                          Shadow(
-                                            color: Colors.black,
-                                            blurRadius: 3,
-                                            offset: Offset(1.5, 1.5),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 8),
-                                      Text(
-                                        'github.com/PUJJAA-VBA',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          shadows: [
-                                            Shadow(
-                                              color: Colors.black,
-                                              blurRadius: 3,
-                                              offset: Offset(1.5, 1.5),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                InkWell(
-                                  onTap: () => _launchURL(
-                                    context,
-                                    'https://www.linkedin.com/in/pujjaa-vba/',
-                                  ),
-                                  child: const Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Icon(
-                                        Icons.link,
-                                        color: Colors.white,
-                                        shadows: [
-                                          Shadow(
-                                            color: Colors.black,
-                                            blurRadius: 3,
-                                            offset: Offset(1.5, 1.5),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 8),
-                                      Text(
-                                        'linkedin.com/in/pujjaa-vba',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          shadows: [
-                                            Shadow(
-                                              color: Colors.black,
-                                              blurRadius: 3,
-                                              offset: Offset(1.5, 1.5),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                InkWell(
-                                  onTap: () => _launchURL(
-                                    context,
-                                    'https://leetcode.com/u/Pujjaa07/',
-                                  ),
-                                  child: const Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Icon(
-                                        Icons.link,
-                                        color: Colors.white,
-                                        shadows: [
-                                          Shadow(
-                                            color: Colors.black,
-                                            blurRadius: 3,
-                                            offset: Offset(1.5, 1.5),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 8),
-                                      Text(
-                                        'leetcode.com/u/Pujjaa',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          shadows: [
-                                            Shadow(
-                                              color: Colors.black,
-                                              blurRadius: 3,
-                                              offset: Offset(1.5, 1.5),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                InkWell(
-                                  onTap: () => _launchURL(
-                                    context,
-                                    'https://www.hackerrank.com/profile/pujjaabaskaran21',
-                                  ),
-                                  child: const Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Icon(
-                                        Icons.link,
-                                        color: Colors.white,
-                                        shadows: [
-                                          Shadow(
-                                            color: Colors.black,
-                                            blurRadius: 3,
-                                            offset: Offset(1.5, 1.5),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 8),
-                                      Text(
-                                        'hackerrank.com/pujjaa',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          shadows: [
-                                            Shadow(
-                                              color: Colors.black,
-                                              blurRadius: 3,
-                                              offset: Offset(1.5, 1.5),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
+                      const SizedBox(height: 32),
                     ],
                   ),
                 ),
@@ -466,89 +392,90 @@ class _MainAppState extends State<MainApp> {
                 ],
               ),
               SizedBox(width: 10),
-              Text(
-                'ABOUT ME',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 32,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 1.2,
-                  fontFamily: 'SpecialElite',
-                  shadows: [
-                    Shadow(
-                      color: Colors.black,
-                      blurRadius: 3,
-                      offset: Offset(1.5, 1.5),
-                    ),
-                  ],
+              Flexible(
+                flex: 100,
+                child: Text(
+                  'ABOUT ME',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 32,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 2,
+                    fontFamily: 'SpecialElite',
+                    shadows: [
+                      Shadow(
+                        color: Colors.black,
+                        blurRadius: 3,
+                        offset: Offset(1.5, 1.5),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 32),
           Container(
-            padding: const EdgeInsets.all(24),
+            margin: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(25),
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.black12,
-                  Colors.blueGrey,
-                  // Colors.blue.shade400,
                   Colors.black,
-                  // Colors.black12,
-                  // const Color.fromARGB(255, 61, 89, 103),
-                  // Colors.indigo.shade600,
-                  // Colors.blue.shade400,
-                  // Colors.black,
+                  const Color.fromARGB(255, 113, 48, 192),
+                  Colors.black,
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
-              borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.3),
+                  color: Colors.white.withOpacity(0.3),
                   blurRadius: 12,
                   offset: const Offset(0, 6),
                 ),
               ],
+              borderRadius: BorderRadius.circular(15),
             ),
-            child: Column(
-              children: const [
-                Text(
-                  '🚀 Aspiring Software Developer | Data + AI Enthusiasist | Flutter + Power BI',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.white,
-                    shadows: [
-                      Shadow(
-                        color: Colors.black,
-                        blurRadius: 3,
-                        offset: Offset(1.5, 1.5),
-                      ),
-                    ],
+            child: Flexible(
+              flex: 100,
+              child: Column(
+                children: const [
+                  Text(
+                    '🚀 Aspiring Software Developer | Data + AI Enthusiasist | Flutter + Power BI',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black,
+                          blurRadius: 3,
+                          offset: Offset(1.5, 1.5),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                SizedBox(height: 20),
-                Text(
-                  'Motivated Software Developer skilled in Python, Java, C/C++, and Flutter, with hands-on experience in building cross-platform applications and data-driven solutions. Proficient in Power BI, Excel, Tableau, and SQL, with growing expertise in Microsoft Azure and Generative AI. Proven leader with strong communication, collaboration, and work ethic, recognized for problem-solving and delivering scalable, user-focused software.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 19,
-                    height: 1.6,
-                    shadows: [
-                      Shadow(
-                        color: Colors.black,
-                        blurRadius: 3,
-                        offset: Offset(1.5, 1.5),
-                      ),
-                    ],
+                  SizedBox(height: 20),
+                  Text(
+                    'Motivated Computer Science Engineering student with a strong focus on Software Development, Data Analytics, and Mobile Application Development. Proficient in Python, Java, Flutter, Power BI, and Tableau, with hands-on experience delivering projects that integrate Problem-Solving and practical Applications. Demonstrates Leadership and effective Communication through collaborative Team projects and technical Workshops. Actively exploring Cloud technologies and advanced Flutter development, while continuously enhancing DSA, system design, and scalable software architecture skills.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 19,
+                      height: 1.6,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black,
+                          blurRadius: 3,
+                          offset: Offset(1.5, 1.5),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           const SizedBox(height: 32),
@@ -578,22 +505,21 @@ class _MainAppState extends State<MainApp> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.black12,
-              Colors.blueGrey,
-              // Colors.blue.shade400,
+              Colors.black,
+              const Color.fromARGB(255, 113, 48, 192),
               Colors.black,
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.25),
-              blurRadius: 8,
-              offset: const Offset(2, 4),
+              color: Colors.white.withOpacity(0.3),
+              blurRadius: 12,
+              offset: const Offset(0, 6),
             ),
           ],
+          borderRadius: BorderRadius.circular(15),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -611,22 +537,25 @@ class _MainAppState extends State<MainApp> {
               ],
             ),
             const SizedBox(height: 12),
-            Text(
-              title,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.w800,
-                // letterSpacing: 2.0,
-                fontFamily: '<Montserrat>',
-                shadows: [
-                  Shadow(
-                    color: Colors.black,
-                    blurRadius: 3,
-                    offset: Offset(1.5, 1.5),
-                  ),
-                ],
+            Flexible(
+              flex: 1000,
+              child: Text(
+                title,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w800,
+                  // letterSpacing: 2.0,
+                  fontFamily: '<Montserrat>',
+                  shadows: [
+                    Shadow(
+                      color: Colors.black,
+                      blurRadius: 3,
+                      offset: Offset(1.5, 1.5),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
@@ -650,6 +579,7 @@ class _MainAppState extends State<MainApp> {
               fontSize: 32,
               fontWeight: FontWeight.w800,
               fontFamily: 'SpecialElite',
+              letterSpacing: 2,
               shadows: [
                 Shadow(
                   color: Colors.black,
@@ -729,21 +659,24 @@ class _MainAppState extends State<MainApp> {
                 context,
                 'https://drive.google.com/drive/folders/16Qw7KJkTVRS8dxknXXkenRLogBKDSkN3',
               ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: const [
-                  Icon(Icons.link, color: Colors.blueGrey),
-                  SizedBox(width: 8),
-                  Text(
-                    'View Certifications',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      // fontWeight: FontWeight.bold,
-                      // decoration: TextDecoration.underline,
+              child: Flexible(
+                flex: 1000,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const [
+                    Icon(Icons.link, color: Colors.blueGrey),
+                    SizedBox(width: 8),
+                    Text(
+                      'View Certifications',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                        // fontWeight: FontWeight.bold,
+                        // decoration: TextDecoration.underline,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
@@ -777,6 +710,10 @@ class _MainAppState extends State<MainApp> {
         'title': 'Strong Work Ethic',
         'desc': 'Committed and consistent in delivery',
       },
+      {
+        'title': 'Problem Solving',
+        'desc': 'Identifying issues quickly and developing effective solutions',
+      },
     ];
     showDialog(
       context: context,
@@ -789,26 +726,29 @@ class _MainAppState extends State<MainApp> {
               fontFamily: '<Montserrat>',
             ),
           ),
-          content: SizedBox(
-            width: MediaQuery.of(context).size.width * 0.7,
-            child: ListView.separated(
-              shrinkWrap: true,
-              separatorBuilder: (_, __) => const Divider(),
-              itemCount: softSkills.length,
-              itemBuilder: (context, index) {
-                final skill = softSkills[index];
-                return ListTile(
-                  leading: const Icon(
-                    Icons.stars_sharp,
-                    color: Colors.deepPurple,
-                  ),
-                  title: Text(
-                    skill['title']!,
-                    style: const TextStyle(fontWeight: FontWeight.w600),
-                  ),
-                  subtitle: Text(skill['desc']!),
-                );
-              },
+          content: Flexible(
+            flex: 1000,
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width * 0.7,
+              child: ListView.separated(
+                shrinkWrap: true,
+                separatorBuilder: (_, __) => const Divider(),
+                itemCount: softSkills.length,
+                itemBuilder: (context, index) {
+                  final skill = softSkills[index];
+                  return ListTile(
+                    leading: Flexible(
+                      flex: 100,
+                      child: Icon(Icons.stars_sharp, color: Colors.deepPurple),
+                    ),
+                    title: Text(
+                      skill['title']!,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                    subtitle: Text(skill['desc']!),
+                  );
+                },
+              ),
             ),
           ),
           actions: [
@@ -822,63 +762,6 @@ class _MainAppState extends State<MainApp> {
     );
   }
 
-  // ======= Experiences Dialog =======
-  // void _showexperiencesDialog(BuildContext context) {
-  //   final List<Map<String, String>> experiences = [
-  //     {
-  //       'title': 'AI Azure Intern',
-  //       'desc':
-  //           'Edunet Foundation\nMay 2025 - Jun 2025\nApplied NLP and advanced prompting with Microsoft Copilot & Gemini 2.5 Flash, achieving 85%+ accuracy.\nGained hands-on experience with Azure Fundamentals and AI services, including model deployment and API integration. ',
-  //     },
-  //     {
-  //       'title': 'Data Analyst Intern',
-  //       'desc':
-  //           'Oasis Infobyte\nJun 2024 - Jul 2024\nBuilt Excel dashboards processing 1,500+ rows using pivot tables, and VBA Macros, reducing manual reporting time by 30%.\nTransformed Kaggle datasets into insights using Power BI & Excel through data cleaning, analysis, and visualization. ',
-  //     },
-  //   ];
-  //   showDialog(
-  //     context: context,
-  //     builder: (context) {
-  //       return AlertDialog(
-  //         title: const Text(
-  //           'EXPERIENCES',
-  //           style: TextStyle(
-  //             fontWeight: FontWeight.bold,
-  //             fontFamily: '<Montserrat>',
-  //           ),
-  //         ),
-  //         content: SizedBox(
-  //           width: MediaQuery.of(context).size.width * 0.7,
-  //           child: ListView.separated(
-  //             shrinkWrap: true,
-  //             separatorBuilder: (_, __) => const Divider(),
-  //             itemCount: experiences.length,
-  //             itemBuilder: (context, index) {
-  //               final exp = experiences[index];
-  //               return ListTile(
-  //                 leading: const Icon(
-  //                   Icons.work_history,
-  //                   color: Colors.deepPurple,
-  //                 ),
-  //                 title: Text(
-  //                   exp['title']!,
-  //                   style: const TextStyle(fontWeight: FontWeight.w600),
-  //                 ),
-  //                 subtitle: Text(exp['desc']!),
-  //               );
-  //             },
-  //           ),
-  //         ),
-  //         actions: [
-  //           TextButton(
-  //             onPressed: () => Navigator.pop(context),
-  //             child: const Text('Close'),
-  //           ),
-  //         ],
-  //       );
-  //     },
-  //   );
-  // }
   void _showexperiencesDialog(BuildContext context) {
     final List<Map<String, String>> experiences = [
       {
@@ -909,44 +792,47 @@ class _MainAppState extends State<MainApp> {
               fontFamily: 'Montserrat',
             ),
           ),
-          content: SizedBox(
-            width: MediaQuery.of(context).size.width * 0.7,
-            child: ListView.separated(
-              shrinkWrap: true,
-              separatorBuilder: (_, __) => const Divider(),
-              itemCount: experiences.length,
-              itemBuilder: (context, index) {
-                final exp = experiences[index];
-                return ListTile(
-                  leading: const Icon(
-                    Icons.work_history,
-                    color: Colors.deepPurple,
-                  ),
-                  title: Text(
-                    exp['title']!,
-                    style: const TextStyle(fontWeight: FontWeight.w600),
-                  ),
-                  subtitle: RichText(
-                    text: TextSpan(
-                      style: const TextStyle(color: Colors.black),
-                      children: [
-                        TextSpan(
-                          text: '${exp['org']}\n',
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        TextSpan(
-                          text: '${exp['year']}\n',
-                          style: const TextStyle(
-                            // fontStyle: FontStyle.italic,
-                            color: Colors.black,
-                          ),
-                        ),
-                        TextSpan(text: exp['desc']),
-                      ],
+          content: Flexible(
+            flex: 1000,
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width * 0.7,
+              child: ListView.separated(
+                shrinkWrap: true,
+                separatorBuilder: (_, __) => const Divider(),
+                itemCount: experiences.length,
+                itemBuilder: (context, index) {
+                  final exp = experiences[index];
+                  return ListTile(
+                    leading: const Icon(
+                      Icons.work_history,
+                      color: Colors.deepPurple,
                     ),
-                  ),
-                );
-              },
+                    title: Text(
+                      exp['title']!,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                    subtitle: RichText(
+                      text: TextSpan(
+                        style: const TextStyle(color: Colors.black),
+                        children: [
+                          TextSpan(
+                            text: '${exp['org']}\n',
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          TextSpan(
+                            text: '${exp['year']}\n',
+                            style: const TextStyle(
+                              // fontStyle: FontStyle.italic,
+                              color: Colors.black,
+                            ),
+                          ),
+                          TextSpan(text: exp['desc']),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
             ),
           ),
           actions: [
@@ -1000,48 +886,54 @@ class _MainAppState extends State<MainApp> {
               fontFamily: 'Montserrat',
             ),
           ),
-          content: SizedBox(
-            width: MediaQuery.of(context).size.width * 0.7,
-            child: ListView.separated(
-              shrinkWrap: true,
-              separatorBuilder: (_, __) => const Divider(),
-              itemCount: projects.length,
-              itemBuilder: (context, index) {
-                final proj = projects[index];
-                return ListTile(
-                  leading: const Icon(
-                    Icons.folder_copy_rounded,
-                    color: Colors.deepPurple,
-                  ),
-                  title: Text(
-                    proj['title']!,
-                    style: const TextStyle(fontWeight: FontWeight.w600),
-                  ),
-                  subtitle: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(proj['desc']!),
-                      const SizedBox(height: 2),
-                      if (proj['link'] != null)
-                        TextButton.icon(
-                          onPressed: () => _launchURL(
-                            context,
-                            proj['link']!,
-                          ), // ✅ pass String
-                          icon: const Icon(Icons.link, color: Colors.blueGrey),
-                          label: const Text(
-                            "View Project",
-                            style: TextStyle(
-                              color: Colors.black,
-                              // fontWeight: FontWeight.bold,
-                              // decoration: TextDecoration.underline,
+          content: Flexible(
+            flex: 1000,
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width * 0.7,
+              child: ListView.separated(
+                shrinkWrap: true,
+                separatorBuilder: (_, __) => const Divider(),
+                itemCount: projects.length,
+                itemBuilder: (context, index) {
+                  final proj = projects[index];
+                  return ListTile(
+                    leading: const Icon(
+                      Icons.folder_copy_rounded,
+                      color: Colors.deepPurple,
+                    ),
+                    title: Text(
+                      proj['title']!,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                    subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(proj['desc']!),
+                        const SizedBox(height: 2),
+                        if (proj['link'] != null)
+                          TextButton.icon(
+                            onPressed: () => _launchURL(
+                              context,
+                              proj['link']!,
+                            ), // ✅ pass String
+                            icon: const Icon(
+                              Icons.link,
+                              color: Colors.blueGrey,
+                            ),
+                            label: const Text(
+                              "View Project",
+                              style: TextStyle(
+                                color: Colors.black,
+                                // fontWeight: FontWeight.bold,
+                                // decoration: TextDecoration.underline,
+                              ),
                             ),
                           ),
-                        ),
-                    ],
-                  ),
-                );
-              },
+                      ],
+                    ),
+                  );
+                },
+              ),
             ),
           ),
           actions: [
@@ -1145,72 +1037,38 @@ class _MainAppState extends State<MainApp> {
     showDialog(
       context: context,
       builder: (context) {
-        return AlertDialog(
-          title: Row(
-            children: [
-              Icon(icon, color: color),
-              const SizedBox(width: 12),
-              Text(skill),
-            ],
-          ),
-          content: SingleChildScrollView(
-            child: RichText(
-              text: TextSpan(
-                style: const TextStyle(color: Colors.black, fontSize: 14),
-                children: contentSpans,
+        return Flexible(
+          flex: 1000,
+          child: AlertDialog(
+            title: Row(
+              children: [
+                Icon(icon, color: color),
+                const SizedBox(width: 12),
+                Text(skill),
+              ],
+            ),
+            content: Flexible(
+              flex: 1000,
+              child: SingleChildScrollView(
+                child: RichText(
+                  text: TextSpan(
+                    style: const TextStyle(color: Colors.black, fontSize: 14),
+                    children: contentSpans,
+                  ),
+                ),
               ),
             ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('Close'),
+              ),
+            ],
           ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Close'),
-            ),
-          ],
         );
       },
     );
   }
-
-  // // ======= Skill Dialog (Software vs Data Analysis) =======
-  // void _showSkillDialog(BuildContext context, String skill) {
-  //   String content;
-  //   IconData icon;
-  //   Color color;
-  //   if (skill.contains('SOFTWARE')) {
-  //     content =
-  //         '🚀 Software Development Skills\n\nLanguages: Python, C, C++, Java, Dart\nLibraries/Frameworks: NumPy, Pandas, Flutter\nAI/ML: Generative AI Prompting (Gemini, Copilot, ChatGPT), NLP Basics\nDatabase: SQL, MySQL\nTools & Platforms: Visual Studio Code, Git, GitHub, VS Code, Android Studio, Firebase (In Progress)';
-  //     icon = Icons.code;
-  //     // \nDatabase: SQL, MySQL\nTools & Platforms: Visual Studio Code, Git, GitHub.
-  //     color = Colors.black;
-  //   } else {
-  //     content =
-  //         '📊 Data Analysis Skills\n\nLanguages: Python, C, C++, Java, Dart\nLibraries/Frameworks: NumPy, Pandas, Flutter\nAI/ML: Generative AI Prompting (Gemini, Copilot, ChatGPT), NLP Basics\nDatabase: SQL, MySQL\nTools & Platforms: Visual Studio Code, Excel, VBA Macros, Power BI, Git, Power Query, Tableau';
-  //     icon = Icons.analytics;
-  //     color = Colors.black;
-  //   }
-  //   showDialog(
-  //     context: context,
-  //     builder: (context) {
-  //       return AlertDialog(
-  //         title: Row(
-  //           children: [
-  //             Icon(icon, color: color),
-  //             const SizedBox(width: 12),
-  //             Text(skill),
-  //           ],
-  //         ),
-  //         content: Text(content),
-  //         actions: [
-  //           TextButton(
-  //             onPressed: () => Navigator.pop(context),
-  //             child: const Text('Close'),
-  //           ),
-  //         ],
-  //       );
-  //     },
-  //   );
-  // }
 
   Future<void> _launchURL(BuildContext context, String urlString) async {
     final Uri url = Uri.parse(urlString);
