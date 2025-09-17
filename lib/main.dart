@@ -207,31 +207,31 @@ class _MainAppState extends State<MainApp> {
                                                 ),
                                                 SizedBox(width: 15),
 
-                                                InkWell(
-                                                  onTap: () => _launchURL(
-                                                    context,
-                                                    'https://leetcode.com/u/Pujjaa07/',
-                                                  ),
-                                                  child: Image.asset(
-                                                    'assets/image/leetcode_image.png',
-                                                    width: 26.8,
-                                                    height: 26.8,
-                                                    fit: BoxFit.contain,
-                                                    errorBuilder:
-                                                        (
-                                                          context,
-                                                          error,
-                                                          stackTrace,
-                                                        ) {
-                                                          return Icon(
-                                                            Icons.error,
-                                                            color: Colors.red,
-                                                            size: 28,
-                                                          );
-                                                        },
-                                                  ),
-                                                ),
-                                                SizedBox(width: 15),
+                                                // InkWell(
+                                                //   onTap: () => _launchURL(
+                                                //     context,
+                                                //     'https://leetcode.com/u/Pujjaa07/',
+                                                //   ),
+                                                //   child: Image.asset(
+                                                //     'assets/image/leetcode_image.png',
+                                                //     width: 26.8,
+                                                //     height: 26.8,
+                                                //     fit: BoxFit.contain,
+                                                //     errorBuilder:
+                                                //         (
+                                                //           context,
+                                                //           error,
+                                                //           stackTrace,
+                                                //         ) {
+                                                //           return Icon(
+                                                //             Icons.error,
+                                                //             color: Colors.red,
+                                                //             size: 28,
+                                                //           );
+                                                //         },
+                                                //   ),
+                                                // ),
+                                                // SizedBox(width: 15),
                                                 InkWell(
                                                   onTap: () => _launchURL(
                                                     context,
