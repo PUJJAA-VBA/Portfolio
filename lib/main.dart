@@ -925,12 +925,12 @@ class _MainAppState extends State<MainApp> {
           text: 'Languages:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        const TextSpan(text: 'Python, C, C++, Java, Dart\n'),
+        const TextSpan(text: 'Python\n'),
         const TextSpan(
           text: 'Libraries/Frameworks:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        const TextSpan(text: 'NumPy, Pandas, Flutter\n'),
+        const TextSpan(text: 'NumPy, Pandas\n'),
         const TextSpan(
           text: 'AI/ML:\n',
           style: TextStyle(fontWeight: FontWeight.bold),
