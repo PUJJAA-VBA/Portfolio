@@ -875,7 +875,7 @@ class _MainAppState extends State<MainApp> {
     Color color;
     List<TextSpan> contentSpans;
 
-    if (skill.contains('SOFTWARE')) {
+    if (skill.toUpperCase().contains('SOFTWARE')) {
       contentSpans = [
         // const TextSpan(
         //   text: 'Software Development Skills\n\n',
