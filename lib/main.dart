@@ -1111,7 +1111,7 @@ class _SmallIconButton extends StatelessWidget {
       message: tooltip,
       child: IconButton(
         onPressed: onPressed,
-        icon: FaIcon(icon, size: 18),
+        icon: Icon(icon, size: 18),
         color: AppColors.primary,
         style: IconButton.styleFrom(
           backgroundColor: AppColors.softAccent,
