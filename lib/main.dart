@@ -576,7 +576,7 @@ class ExperienceSection extends StatelessWidget {
             organization: 'Edunet Foundation',
             duration: 'May 2025 - Jun 2025',
             description:
-                'Worked with AI tools, prompting workflows, Azure fundamentals, and API-oriented learning. Built confidence in applying AI services to practical software ideas.',
+                'Learned AI tools, prompting workflows, Azure fundamentals, and API-oriented learning. Built confidence in applying AI services to practical software ideas.',
           ),
           SizedBox(height: 16),
           ExperienceCard(
