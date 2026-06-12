@@ -23,10 +23,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets\image\Agrisense.png
-    - assets\image\Brewly.png
-    - assets\image\Online.png
-    - assets\image\Sales.png
+  - assets/image/Agrisense.png
+  - assets/image/Brewly.png
+  - assets/image/Online.png
+  - assets/image/Sales.png
 
   fonts:
     - family: Poppins
